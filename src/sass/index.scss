@@ -1,7 +1,7 @@
 // base
 @import './base/base';
 @import './base/container';
-
+// layout
 @import './layout/about-us';
 @import './layout/contact';
 @import './layout/footer';
@@ -11,3 +11,5 @@
 @import './layout/registration';
 @import './layout/reviews';
 @import './layout/speakers';
+// utils
+@import './utils/_variables';
