@@ -1,14 +1,19 @@
 .container {
   max-width: 320px;
   width: 100%;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: 0 auto;
-  @media screen and(min-width:768px) {
-    max-width: 768px;
+
+  @media screen and(min-width:$breakpoint-tablet) {
+    max-width: $breakpoint-tablet;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 
-  @media screen and(min-width:1280px) {
+  @media screen and(min-width:$breakpoint-decktop) {
     max-width: 1280px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }

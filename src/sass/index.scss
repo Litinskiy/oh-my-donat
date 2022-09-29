@@ -1,6 +1,10 @@
+// utils
+@import './utils/variables';
 // base
 @import './base/base';
 @import './base/container';
+// component
+@import './components/button';
 // layout
 @import './layout/about-us';
 @import './layout/contact';
@@ -11,5 +15,3 @@
 @import './layout/registration';
 @import './layout/reviews';
 @import './layout/speakers';
-// utils
-@import './utils/variables';

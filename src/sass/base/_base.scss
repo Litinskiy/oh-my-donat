@@ -1,5 +1,10 @@
 body {
-  background-color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-size: $font-sz-16;
+  font-weight: 400;
+  color: $main-color;
+  background-color: $bg-main-color;
 }
 
 html {
@@ -41,7 +46,6 @@ a {
 
 button {
   cursor: pointer;
-  border: none;
 }
 
 input {
