@@ -1,24 +1,65 @@
-.card {
-  display: grid;
-  border: 1px solid black;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-  grid-gap: 24px;
-  padding: 20px;
+.section__title--price {
+  font-family: 'Montserrat Alternates';
+  margin-bottom: 27px;
+  text-align: center;
 }
 
-.card__item {
-  position: relative;
-}
-.card__item:before {
-  content: '';
-  background-image: url('../images/hat.svg');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 24px;
-  height: 24px;
-  position: absolute;
-  top: 0;
-  left: -20px;
+.card {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  background-color: $price-bckg;
+  border-radius: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: 10px 15px 25px rgba(210, 201, 201, 0.45);
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+
+  &__title {
+    font-family: 'Montserrat Alternates';
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.37;
+    margin-bottom: 16px;
+  }
+
+  &__list {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__item {
+    position: relative;
+    max-width: 220px;
+    font-size: 18px;
+    line-height: 1.22;
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+    &:last-child {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__item:before {
+    content: '';
+    background-image: url('../images/hat.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 0;
+    left: -27px;
+  }
+
+  &__button {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
