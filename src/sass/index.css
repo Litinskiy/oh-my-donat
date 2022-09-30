@@ -110,7 +110,7 @@ input {
     margin: -10px;
   }
 }
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .speakers-list {
     display: flex;
     flex-wrap: no-wrap;
@@ -157,19 +157,33 @@ input {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  background-color: #fff;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  vertical-align: top;
 }
 @media screen and (min-width: 480px) {
   .speakers-list__text {
-    width: 100%;
+    width: 130px;
   }
 }
 @media screen and (min-width: 768px) {
   .speakers-list__text {
-    width: 100%;
+    width: 152px;
   }
 }
 @media screen and (min-width: 1200px) {
   .speakers-list__text {
-    width: 130px;
+    width: 181px;
   }
+}
+
+.speakers-list__image {
+  width: 131px;
+  height: 141px;
+  margin-left: auto;
+  margin-right: auto;
 }/*# sourceMappingURL=index.css.map */
