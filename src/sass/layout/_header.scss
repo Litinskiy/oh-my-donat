@@ -51,8 +51,10 @@
       position: absolute;
       width: 100px;
       height: 100px;
-      top: 92px;
-      left: 268px;
+      top: 0px;
+      left: 0px;
+      // top: 92px;
+      // left: 268px;
   
       background-image: url('../images/header/svg/tablet-main.svg');
     }
@@ -227,9 +229,9 @@
 }
 
 .header .socials {
-  @media screen and (max-width: ($breakpoint-tablet - 1px)) {
-    margin-left: auto;
-    margin-right: auto;
+  @media screen and (min-width: $breakpoint-tablet) {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
