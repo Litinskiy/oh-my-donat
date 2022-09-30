@@ -1,0 +1,14 @@
+.footer{
+    margin-top: 40px;
+    min-width: 280px;
+}
+
+.footer-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__contact-link{
+line-height: 1.25;
+color: #2E2520;
+}
