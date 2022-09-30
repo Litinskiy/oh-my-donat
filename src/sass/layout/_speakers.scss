@@ -1,0 +1,65 @@
+.speakers-list {
+  text-align: center;
+  list-style: none;
+  @media (max-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+  }
+
+  @media (min-width: 769px) {
+    display: flex;
+    flex-wrap: no-wrap;
+  }
+
+  @media (min-width: 1200px) {
+    display: flex;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    align-items: center;
+  }
+}
+
+.speakers-list__item {
+  @media (max-width: 480px) {
+    width: calc((100% - 40px) / 2);
+  }
+
+  @media (max-width: 768px) {
+    margin: 10px;
+  }
+  @media (min-width: 769px) {
+    width: calc((100% - 96px) / 4);
+    &:not(:last-child) {
+      margin-right: 32px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    width: calc((100% - 96px) / 4);
+    &:not(:last-child) {
+      margin-right: 32px;
+    }
+  }
+}
+
+.speakers-list__text {
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 480px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: $breakpoint-tablet) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: $breakpoint-decktop) {
+    width: 130px;
+  }
+}
