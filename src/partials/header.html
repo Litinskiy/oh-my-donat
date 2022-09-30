@@ -1,1 +1,104 @@
-<header>Header</header>
+<header class="header">
+   <div class="container">
+  <!-- mobile version -->
+  <div class="logo-menu-wrapper">
+    <picture>
+      <source
+        srcset="
+          ./images/header/desktop-logo@1x.png 1x,
+          ./images/header/desktop-logo@2x.png 2x
+        "
+        media="(min-width: 1200px)"
+      />
+      <source
+        srcset="
+          ./images/header/mobile-logo@1x.png 1x,
+          ./images/header/mobile-logo@2x.png 2x
+        "
+        media="(max-width: 1199px)"
+      />
+      <img
+        src="./images/header/mobile-logo@2x.png"
+        alt="Logo"
+        width="108"
+        height="50"
+      />
+    </picture>
+   <button type="button" class="burger" data-menu-button>
+      <svg width="32" height="32">
+         <use href="./images/icons.svg#icon-burger-menu"></use>
+       </svg>
+   </button>
+
+     <!-- Navigation menu - desktop version -->
+
+  <nav class="header__nav">
+    <ul class="header__list">
+      <li class="header__item"><a href="#" class="header__link">About us</a></li>
+      <li class="header__item">
+        <a href="#" class="header__link">Program</a>
+      </li>
+      <li class="header__item"><a href="#" class="header__link">Speakers</a></li>
+      <li class="header__item"><a href="#" class="header__link">Price</a></li>
+      <li class="header__item"><a href="#" class="header__link">Reviews</a></li>
+      <li class="header__item"><a href="#" class="header__link">Contacts</a></li>
+    </ul>
+  </nav>
+  </div>
+
+  <h1 class="header__title">Donut Masterclass with the Donut King</h1>
+  <h2 class="header__subtitle">Hosted by Eva Green</h2>
+  <button class="button">Register</button>
+  <ul class="socials">
+    <li class="socials__item">
+      <a class="socials__link" href="#">
+        <svg width="16" height="16">
+          <use href="./images/icons.svg#icon-twitter"></use>
+        </svg>
+      </a>
+    </li>
+    <li class="socials__item">
+      <a class="socials__link" href="#">
+        <svg width="16" height="16">
+          <use href="./images/icons.svg#icon-instagram"></use>
+        </svg>
+      </a>
+    </li>
+    <li class="socials__item">
+      <a class="socials__link" href="#">
+        <svg width="16" height="16">
+          <use href="./images/icons.svg#icon-facebook"></use>
+        </svg>
+      </a>
+    </li>
+  </ul>
+
+    <!-- Mobile menu -->
+
+  <div class="mobile__menu" data-menu>
+    <div class="mobile__head-wrapper">
+    <img
+        src="./images/header/mobile-logo@2x.png"
+        alt="Logo"
+        width="108"
+        height="50"
+        />
+        <button type="button" class="mobile__close-btn" data-menu-close>
+          <svg width="32" height="32">
+            <use href="./images/icons.svg#icon-burger-close"></use>
+          </svg>
+        </button>
+      </div>
+    <ul class="mobile__nav">
+      <li class="mobile__item"><a href="#" class="mobile__link">About us</a></li>
+      <li class="mobile__item">
+        <a href="#" class="mobile__link">Program</a>
+      </li>
+      <li class="mobile__item"><a href="#" class="mobile__link">Speakers</a></li>
+      <li class="mobile__item"><a href="#" class="mobile__link">Price</a></li>
+      <li class="mobile__item"><a href="#" class="mobile__link">Reviews</a></li>
+      <li class="mobile__item"><a href="#" class="mobile__link">Contacts</a></li>
+    </ul>
+  </div>
+</div>
+</header>

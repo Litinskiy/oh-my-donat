@@ -1,0 +1,18 @@
+.footer{
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.footer-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__contact-link{
+line-height: 1.25;
+color: #2E2520;
+}
+

@@ -1,0 +1,55 @@
+
+.contact{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.contact__title {
+    margin-bottom: 27px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.21;
+    text-align: center;
+    color: #2E2520;
+}
+
+.contact__sub-title {
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.25px;
+    text-align: center;
+    color: #2E2520;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    color: $white-color;
+}
+
+.contact-form__input {
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(0, 0, 0, 0.5);
+    border-color: transparent;
+
+}
+
+.contact-form__label{
+    width: 100%;
+}
+
+.contact-form__label:nth-child(1) {
+    margin-bottom: 20px;
+}
+
+.contact-form__label:nth-child(2) {
+    margin-bottom: 28px;
+}
+
+.contact-button{
+    margin-bottom: 28px;
+}
