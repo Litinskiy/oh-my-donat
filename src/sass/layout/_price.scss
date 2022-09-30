@@ -1,7 +1,16 @@
-.card-list__item {
+.card {
+  display: grid;
+  border: 1px solid black;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-gap: 24px;
+  padding: 20px;
+}
+
+.card__item {
   position: relative;
 }
-.card-list__item:before {
+.card__item:before {
   content: '';
   background-image: url('../images/hat.svg');
   background-size: contain;
@@ -11,5 +20,5 @@
   height: 24px;
   position: absolute;
   top: 0;
-  left: -40px;
+  left: -20px;
 }
