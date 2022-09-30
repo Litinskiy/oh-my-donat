@@ -43,7 +43,7 @@
     color: rgba(0, 0, 0, 0.5);
 }
 
-.contact-form::last-child {
+.contact-form:nth-child(2) {
     margin-bottom: 28px;
 }
 
