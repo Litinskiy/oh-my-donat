@@ -99,6 +99,15 @@ input {
   border: 1px solid #ffffff;
 }
 
+.card-list__item::before {
+  content: url(../images/icons.svg#icon-hat);
+}
+
+.registration-form {
+  display: flex;
+  flex-direction: column;
+}
+
 .speakers-list {
   text-align: center;
   list-style: none;
@@ -157,6 +166,7 @@ input {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  background-color: #fff;
 }
 @media screen and (min-width: 480px) {
   .speakers-list__text {
