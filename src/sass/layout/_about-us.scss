@@ -1,12 +1,12 @@
 .abous-us {
-  @media screen and($breakpoint-mobile) {
+  @media screen and ($breakpoint-mobile) {
     padding-top: 20px;
     padding-bottom: 18px;
     text-align: center;
     margin-bottom: 28px;
   }
 
-  @media screen and($breakpoint-tablet) {
+  @media screen and ($breakpoint-tablet) {
     padding-top: 29px;
     padding-bottom: 36px;
   }
@@ -15,7 +15,7 @@
     font-family: 'Montserrat Alternates';
     color: $main-color;
 
-    @media screen and($breakpoint-mobile) {
+    @media screen and ($breakpoint-mobile) {
       margin-left: auto;
       margin-right: auto;
       font-weight: $font-w-500;
@@ -24,7 +24,7 @@
       margin-bottom: 8px;
     }
 
-    @media screen and($breakpoint-tablet) {
+    @media screen and ($breakpoint-tablet) {
       text-align: left;
       font-weight: $font-w-500;
       font-size: 32px;
@@ -37,7 +37,7 @@
     font-family: 'Montserrat Alternates';
     color: $main-color;
 
-    @media screen and($breakpoint-tablet) {
+    @media screen and ($breakpoint-tablet) {
       margin: 0 auto;
       margin-bottom: 10px;
 
@@ -51,7 +51,7 @@
     font-family: 'Montserrat Alternates';
     color: $main-color;
 
-    @media screen and($breakpoint-tablet) {
+    @media screen and ($breakpoint-tablet) {
       margin: 0 auto;
       margin-bottom: 16px;
 
@@ -65,7 +65,7 @@
     font-family: 'Montserrat Alternates';
     color: $main-color;
 
-    @media screen and($breakpoint-mobile) {
+    @media screen and ($breakpoint-mobile) {
       font-weight: $font-w-500;
       font-size: 24px;
       line-height: 1.2;
@@ -79,13 +79,13 @@
 }
 
 .flex-container {
-  @media screen and($breakpoint-mobile) {
+  @media screen and ($breakpoint-mobile) {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
   }
 
-  @media screen and($breakpoint-tablet) {
+  @media screen and ($breakpoint-tablet) {
     display: flex;
     flex-wrap: nowrap;
   }
@@ -93,20 +93,20 @@
 
 .program {
   &__item {
-    @media screen and($breakpoint-mobile) {
+    @media screen and ($breakpoint-mobile) {
       display: flex;
       text-align: baseline;
 
       margin-bottom: 8px;
     }
-    @media screen and($breakpoint-tablet) {
+    @media screen and ($breakpoint-tablet) {
       display: flex;
       text-align: baseline;
 
       margin-bottom: 12px;
     }
 
-    @media screen and($breakpoint-decktop) {
+    @media screen and ($breakpoint-decktop) {
       display: flex;
       text-align: baseline;
 
@@ -118,7 +118,7 @@
     font-family: 'Montserrat Alternates';
     color: $main-color;
 
-    @media screen and($breakpoint-mobile) {
+    @media screen and ($breakpoint-mobile) {
       margin-left: auto;
       margin-right: auto;
       font-weight: $font-w-500;
@@ -127,7 +127,7 @@
       margin-bottom: 8px;
     }
 
-    @media screen and($breakpoint-tablet) {
+    @media screen and ($breakpoint-tablet) {
       text-align: left;
       font-weight: $font-w-500;
       font-size: 32px;
@@ -135,7 +135,7 @@
       margin-bottom: 28px;
     }
 
-    @media screen and($breakpoint-decktop) {
+    @media screen and ($breakpoint-decktop) {
       text-align: left;
       font-weight: $font-w-500;
       font-size: 32px;
@@ -148,19 +148,19 @@
     font-family: 'Montserrat Alternates';
     color: $main-color;
 
-    @media screen and($breakpoint-mobile) {
+    @media screen and ($breakpoint-mobile) {
       font-weight: 400;
       font-size: $font-sz-16;
       line-height: 1.25;
     }
 
-    @media screen and($breakpoint-tablet) {
+    @media screen and ($breakpoint-tablet) {
       font-weight: 400;
       font-size: $font-sz-16;
       line-height: 1.25;
     }
 
-    @media screen and($breakpoint-decktop) {
+    @media screen and ($breakpoint-decktop) {
       font-weight: 400;
       font-size: $font-sz-18;
       line-height: 1.22;
@@ -176,10 +176,10 @@
     display: flex;
     flex-direction: column;
 
-    @media screen and($breakpoint-mobile) {
+    @media screen and ($breakpoint-mobile) {
       padding-bottom: 20px;
     }
-    @media screen and($breakpoint-tablet) {
+    @media screen and ($breakpoint-tablet) {
     }
   }
 
@@ -187,7 +187,7 @@
     display: flex;
     flex-direction: column;
 
-    @media screen and($breakpoint-mobile) {
+    @media screen and ($breakpoint-mobile) {
       padding-top: 20px;
     }
   }
@@ -197,7 +197,7 @@
     border: 1px solid $accent-pink-color;
     border-radius: 50%;
 
-    @media screen and($breakpoint-mobile) {
+    @media screen and ($breakpoint-mobile) {
       padding-top: 28px;
     }
   }
@@ -212,19 +212,19 @@
     font-family: 'Montserrat Alternates';
     color: $white-color;
 
-    @media screen and($breakpoint-mobile) {
+    @media screen and ($breakpoint-mobile) {
       font-weight: $font-w-500;
       font-size: 14px;
       line-height: 1.21;
     }
 
-    @media screen and($breakpoint-tablet) {
+    @media screen and ($breakpoint-tablet) {
       font-weight: $font-w-500;
       font-size: $font-sz-16;
       line-height: 1.25;
     }
 
-    @media screen and($breakpoint-decktop) {
+    @media screen and ($breakpoint-decktop) {
       font-weight: $font-w-500;
       font-size: 24px;
       line-height: 1.2;
@@ -235,19 +235,19 @@
     font-family: 'Montserrat Alternates';
     color: $white-color;
 
-    @media screen and($breakpoint-mobile) {
+    @media screen and ($breakpoint-mobile) {
       font-weight: 400;
       font-size: 12px;
       line-height: 1.25;
     }
 
-    @media screen and($breakpoint-tablet) {
+    @media screen and ($breakpoint-tablet) {
       font-weight: 400;
       font-size: 14px;
       line-height: 1.21;
     }
 
-    @media screen and($breakpoint-decktop) {
+    @media screen and ($breakpoint-decktop) {
       font-weight: 400;
       font-size: $font-sz-16;
       line-height: 1.25;
@@ -256,7 +256,7 @@
   &__text--desktop {
     display: none;
 
-    @media screen and($breakpoint-decktop) {
+    @media screen and ($breakpoint-decktop) {
       display: block;
       font-weight: 400;
       font-size: $font-sz-18;
