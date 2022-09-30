@@ -23,8 +23,9 @@
 }
 
 .registration-container__data{
+    // position: relative;
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     font-weight: 500;
     font-size: 18px;
     line-height: 1.22;
@@ -44,14 +45,15 @@
     color: $white-color;
 }
 
-.registration-container__data::after {
+.registration-container__data::before {
+    position: absolute;
     content: '';
-    display: block;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 5px;
-    border-radius: 5px solid red;
+    display: inline-block;
+    left: 28px;
+    bottom: 290px;
+
+    width: 264px;
+    border: 1px solid rgba(255, 255, 255, 1);
 }
 
 .registration-form{
