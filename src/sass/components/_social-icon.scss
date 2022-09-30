@@ -1,0 +1,20 @@
+.socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80px;
+}
+.socials__item {
+  display: inline-flex;
+  padding: 0;
+  border: 0;
+}
+.socials__link {
+  line-height: 1;
+  fill: $main-color;
+  transition: fill $time $timing-function;
+  &:hover,
+  &:focus {
+    fill: $accent-pink-color;
+  }
+}
