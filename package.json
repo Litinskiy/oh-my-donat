@@ -2,10 +2,10 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://github.com/Katya-Kondratchuk/oh-my-donat.git",
+  "homepage": "https://Katya-Kondratchuk.github.io/oh-my-donat/",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /oh-my-donat.git/"
+    "build": "parcel build src/*.html --public-url /oh-my-donat/"
   },
   "repository": {
     "type": "git",
