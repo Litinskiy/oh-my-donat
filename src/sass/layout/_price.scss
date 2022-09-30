@@ -1,0 +1,15 @@
+.card-list__item {
+  position: relative;
+}
+.card-list__item:before {
+  content: '';
+  background-image: url('../images/hat.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 0;
+  left: -40px;
+}
