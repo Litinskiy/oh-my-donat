@@ -1,0 +1,372 @@
+.header {
+  position: relative;
+
+  padding-top: 16px;
+  padding-bottom: 8px;
+
+  min-height: 312px;
+  text-align: center;
+
+  &:after {
+    display: block;
+    content: '';
+
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 104px;
+    left: 38px;
+
+    border: 10px solid rgba(243, 132, 140, 0.12);
+    border-radius: 50%;
+  }
+
+  background-image: url('../images/header/mobile-hero@1x.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/header/mobile-hero@2x.jpg');
+  }
+
+  @media screen and (min-width: $breakpoint-tablet) {
+    padding-top: 24px;
+    padding-bottom: 43px;
+    text-align: left;
+
+    background-image: url('../images/header/tablet-hero@1x.jpg');
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/header/tablet-hero@2x.jpg');
+    }
+
+    &:after {
+      width: 100px;
+      height: 100px;
+      top: 92px;
+      left: 268px;
+
+      border: 20px solid rgba(243, 132, 140, 0.12);
+    }
+  }
+
+  @media screen and (min-width: $breakpoint-decktop) {
+    padding-top: 36px;
+    padding-bottom: 90px;
+
+    background-image: url('../images/header/desktop-hero@1x.jpg');
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/header/desktop-hero@2x.jpg');
+    }
+
+    &:after {
+      width: 150px;
+      height: 150px;
+      top: 171px;
+      left: 449px;
+
+      border: 30px solid rgba(243, 132, 140, 0.12);
+    }
+  }
+}
+
+.logo-menu-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 20px;
+
+  @media screen and (min-width: $breakpoint-tablet) {
+    margin-bottom: 28px;
+  }
+  @media screen and (min-width: $breakpoint-decktop) {
+
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 65px;
+  }
+
+  & img {
+    width: 158px;
+    height: 70px;
+  }
+}
+
+.burger {
+  fill: $main-color;
+  background-color: transparent;
+  border: none;
+  outline: none;
+
+  cursor: pointer;
+
+  @media screen and (min-width: $breakpoint-decktop) {
+    display: none;
+  }
+}
+
+.header__title {
+  margin-bottom: 18px;
+
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: $font-w-600;
+  font-size: 28px;
+  line-height: 1.21;
+  letter-spacing: -0.03em;
+
+  @media screen and (min-width: $breakpoint-tablet) {
+    width: 319px;
+
+    margin-bottom: 10px;
+
+    font-size: 30px;
+    line-height: 1.23;
+  }
+
+  @media screen and (min-width: $breakpoint-decktop) {
+    width: 757px;
+
+    margin-bottom: 20px;
+
+    font-size: 60px;
+    line-height: 1.08;
+  }
+}
+
+.header__subtitle {
+  margin-bottom: 28px;
+
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-style: normal;
+  font-weight: $font-w-500;
+  font-size: inherit;
+  line-height: 1.25;
+
+  @media screen and (min-width: $breakpoint-tablet) {
+    margin-bottom: 24px;
+  }
+
+  @media screen and (min-width: $breakpoint-decktop) {
+    margin-bottom: 28px;
+
+    font-size: 24px;
+    line-height: 1.21;
+  }
+}
+
+.header .button {
+  margin-bottom: 28px;
+
+  @media screen and (min-width: $breakpoint-tablet) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: $breakpoint-decktop) {
+    margin-bottom: 32px;
+  }
+}
+
+.header__nav {
+  display: none;
+
+  @media screen and (min-width: $breakpoint-decktop) {
+    display: flex;
+    margin-left: 47px;
+  }
+
+  & .header__item:not(:last-child) {
+    margin-right: 4px;
+  }
+}
+
+.header__link {
+  display: inline-flex;
+  padding: 4px 8px;
+
+  font-family: inherit;
+  font-size: $font-sz-18;
+  line-height: 1.22;
+
+  color: $main-color;
+  
+  transition: color 1500ms $timing-function,
+  background-image 1500ms $timing-function,
+  box-shadow 1500ms $timing-function;
+
+  &:hover,
+  &:focus {
+    color: #fcfcfc;
+    background-image: linear-gradient(
+      180deg,
+      rgba(248, 110, 103, 0.63) 0%,
+      rgba(253, 86, 143, 0.86) 100%
+    );
+    box-shadow: 0px 7px 27px -2px rgba(253, 88, 140, 0.35);
+  }
+}
+
+.header .socials {
+  @media screen and (max-width: ($breakpoint-tablet - 1px)) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+// modal window
+
+.mobile__menu {
+   position: fixed;
+   top: 0;
+   right: 0;
+   width: 100%;
+   height: 100vh;
+   
+   z-index: 2;
+   
+   background-color: $bg-main-color;
+   
+   transform: translate(100%);
+   transition: transform $time $timing-function;
+     
+   padding: 16px 20px;
+    
+   &::after {
+    display: block;
+    content: '';
+
+    position: absolute;
+    width: 78px;
+    height: 78px;
+    top: 66px;
+    right: -28px;
+
+    border: 12px solid rgba(214, 131, 98, 0.17);
+    border-radius: 50%;
+  }
+
+  &::before {
+    display: block;
+    content: '';
+
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    bottom: -20px;
+    left: -70px;
+
+    border: 12px solid rgba(60, 50, 45, 0.12);
+    border-radius: 50%;
+  }
+
+  @media screen and (min-width: $breakpoint-tablet) {
+    padding: 24px 32px;
+  }
+
+   &.is-open {
+      transform: translate(0);
+   }
+}
+
+.mobile__head-wrapper {
+   display: flex;
+   justify-content: space-between;
+
+   margin-bottom: 46px;
+
+  //  width: 100%;
+
+  @media screen and (min-width: $breakpoint-tablet) {
+    margin-bottom: 70px;
+  }
+}
+
+.mobile__close-btn {
+  display: inline-flex;
+  align-self: flex-start;
+  border: none;
+  padding: 0;
+
+  background-color: inherit;
+
+  @media screen and (min-width: $breakpoint-tablet) {
+    align-self: center;
+  }
+}
+
+.mobile__item {
+  margin-bottom: 40px;
+  text-align: center;
+
+  @media screen and (min-width: $breakpoint-tablet) {
+    margin-bottom: 60px;
+  }
+}
+
+.mobile__link {
+   padding: 10px 28px;
+
+   font-family: 'Montserrat Alternates', sans-serif;
+   font-weight: $font-w-500;
+   font-size: 28px;
+   line-height: 1.21;
+
+   color: $main-color;
+
+   transition: color 1500ms $timing-function,
+    background-image 1500ms $timing-function,
+    box-shadow 1500ms $timing-function;
+
+   &:hover,
+   &:focus {
+    color: $white-color;
+    background-image: linear-gradient(180deg, rgba(248, 110, 103, 0.63) 0%, rgba(253, 86, 143, 0.86) 100%);
+    box-shadow: 0px 7px 27px -2px rgba(253, 88, 140, 0.35);
+   }
+
+   @media screen and (min-width: $breakpoint-tablet) {
+    font-size: 40px;
+    line-height: 1.23;
+   }
+}
+
+
+// Social networks
+
+.socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80px;
+}
+
+.socials__item {
+  display: inline-flex;
+  padding: 0;
+  border: 0;
+  align-items: center;
+  align-self: center;
+   
+}
+
+.socials__link {
+  
+  // align-items: center;
+  align-self: center;
+
+  fill: $main-color;
+
+  transition: fill $time $timing-function;
+
+  &:hover,
+  &:focus {
+    fill: $accent-pink-color;
+  }
+}
