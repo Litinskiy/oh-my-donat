@@ -9,6 +9,17 @@
   font-family: 'Montserrat Alternates';
   margin-bottom: 27px;
   text-align: center;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 31px;
+  }
+}
+
+.card-grid {
+  @media screen and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: start;
+  }
 }
 
 .card {
@@ -19,6 +30,12 @@
   border-radius: 25px;
   padding-bottom: 20px;
   padding-top: 18px;
+  @media screen and (min-width: 480px) {
+    max-width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 225px;
+  }
 
   box-shadow: 10px 15px 25px rgba(210, 201, 201, 0.45);
   &:not(:last-child) {
@@ -29,12 +46,6 @@
     padding-left: 40px;
     padding-right: 18px;
   }
-
-  // &__list {
-  // для центрування 480!!!!!
-  //   margin-left: auto;
-  //   margin-right: auto;
-  // }
 
   &__list {
     margin-bottom: 31px;
@@ -47,6 +58,12 @@
     font-size: 18px;
     line-height: 1.37;
     margin-bottom: 18px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 17px;
+      max-width: 189px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   &__item {
@@ -60,6 +77,10 @@
     @media screen and (min-width: 320px) {
       margin-left: auto;
       margin-right: auto;
+    }
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+      line-height: 1.25;
     }
   }
 
