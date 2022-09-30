@@ -351,15 +351,15 @@
   display: inline-flex;
   padding: 0;
   border: 0;
-  align-items: center;
-  align-self: center;
+  // align-items: center;
+  // align-self: center;
    
 }
 
 .socials__link {
-  
+  line-height: 1;
   // align-items: center;
-  align-self: center;
+  // align-self: center;
 
   fill: $main-color;
 
