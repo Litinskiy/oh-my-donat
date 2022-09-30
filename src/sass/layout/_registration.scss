@@ -1,10 +1,10 @@
 
 .registration{
     max-width: 480px;
-    text-align: center;
+    margin: 0 auto;
 }
 .registration-container{
-    position: relative;
+    
     width: 100%;
     padding: 40px 8px 32px 8px;
     height: auto;
@@ -23,7 +23,7 @@
 }
 
 .registration-container__data{
-    // position: relative;
+    position: relative;
     display: block;
     margin-bottom: 40px;
     font-weight: 500;
@@ -45,22 +45,25 @@
     color: $white-color;
 }
 
-.registration-container__data::before {
+.registration-container__data::after {
     position: absolute;
+    width: 100%;
+    display: block;
     content: '';
     display: inline-block;
-    left: 28px;
-    bottom: 290px;
+    left: 0px;
+    top: 40px;
 
-    width: 264px;
+    width: 100%;
     border: 1px solid rgba(255, 255, 255, 1);
 }
 
 .registration-form{
     display: flex;
     flex-direction: column;
-    max-width: 290px;
+    width: 100%;
     align-items: center;
+    text-align: center;
     margin: 0 auto;
     color: $white-color;
 }
