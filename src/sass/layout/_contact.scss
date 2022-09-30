@@ -1,12 +1,12 @@
 
 .contact{
-    max-width: 480px;
+    // max-width: 480px;
     margin-top: 40px;
 }
 
 .contact__container{
     width: 100%;
-    max-width: 280px;
+    // min-width: 280px;
     margin: 0 auto;
 }
 
@@ -37,12 +37,48 @@
 
 .contact-form__input {
     width: 100%;
-    margin-bottom: 28px;
     font-size: 16px;
     line-height: 1.25;
     color: rgba(0, 0, 0, 0.5);
+}
+.contact-form__label:nth-child(1) {
+    margin-bottom: 20px;
+}
+
+.contact-form__label:nth-child(2) {
+    margin-bottom: 28px;
 }
 
 .contact-button{
     margin-bottom: 28px;
 }
+
+// .socials {
+//     display: flex;
+//     justify-content: center;
+//     width: 100%;
+// }
+
+// .socials__item {
+//     display: inline-flex;
+//     padding: 0;
+//     border: 0;
+//     margin-right: 16px;
+// }
+
+// .socials__item{
+//     .socials__item:last-child{
+//         margin-right: 0;
+//     }
+// }
+
+// .socials__link {
+//     line-height: 1;
+//     fill: $main-color;
+//     transition: fill $time $timing-function;
+
+//     &:hover,
+//     &:focus {
+//         fill: $accent-pink-color;
+//     }
+// }
