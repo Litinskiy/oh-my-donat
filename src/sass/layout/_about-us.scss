@@ -1,0 +1,266 @@
+.abous-us {
+  @media screen and ($breakpoint-mobile) {
+    padding-top: 20px;
+    padding-bottom: 18px;
+    text-align: center;
+    margin-bottom: 28px;
+  }
+
+  @media screen and ($breakpoint-tablet) {
+    padding-top: 29px;
+    padding-bottom: 36px;
+  }
+
+  &__title {
+    font-family: 'Montserrat Alternates';
+    color: $main-color;
+
+    @media screen and ($breakpoint-mobile) {
+      margin-left: auto;
+      margin-right: auto;
+      font-weight: $font-w-500;
+      font-size: 24px;
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+
+    @media screen and ($breakpoint-tablet) {
+      text-align: left;
+      font-weight: $font-w-500;
+      font-size: 32px;
+      line-height: 1.21;
+      margin-bottom: 28px;
+    }
+  }
+
+  &__text {
+    font-family: 'Montserrat Alternates';
+    color: $main-color;
+
+    @media screen and ($breakpoint-tablet) {
+      margin: 0 auto;
+      margin-bottom: 10px;
+
+      font-weight: 400;
+      font-size: $font-sz-16;
+      line-height: 1.25;
+    }
+  }
+
+  &__text--indent {
+    font-family: 'Montserrat Alternates';
+    color: $main-color;
+
+    @media screen and ($breakpoint-tablet) {
+      margin: 0 auto;
+      margin-bottom: 16px;
+
+      font-weight: 400;
+      font-size: $font-sz-16;
+      line-height: 1.25;
+    }
+  }
+
+  &__link {
+    font-family: 'Montserrat Alternates';
+    color: $main-color;
+
+    @media screen and ($breakpoint-mobile) {
+      font-weight: $font-w-500;
+      font-size: 24px;
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+    &:hover,
+    &:focus {
+      color: $accent-pink-color;
+    }
+  }
+}
+
+.flex-container {
+  @media screen and ($breakpoint-mobile) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  @media screen and ($breakpoint-tablet) {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+
+.program {
+  &__item {
+    @media screen and ($breakpoint-mobile) {
+      display: flex;
+      text-align: baseline;
+
+      margin-bottom: 8px;
+    }
+    @media screen and ($breakpoint-tablet) {
+      display: flex;
+      text-align: baseline;
+
+      margin-bottom: 12px;
+    }
+
+    @media screen and ($breakpoint-decktop) {
+      display: flex;
+      text-align: baseline;
+
+      margin-bottom: 17px;
+    }
+  }
+
+  &__title {
+    font-family: 'Montserrat Alternates';
+    color: $main-color;
+
+    @media screen and ($breakpoint-mobile) {
+      margin-left: auto;
+      margin-right: auto;
+      font-weight: $font-w-500;
+      font-size: 24px;
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+
+    @media screen and ($breakpoint-tablet) {
+      text-align: left;
+      font-weight: $font-w-500;
+      font-size: 32px;
+      line-height: 1.21;
+      margin-bottom: 28px;
+    }
+
+    @media screen and ($breakpoint-decktop) {
+      text-align: left;
+      font-weight: $font-w-500;
+      font-size: 32px;
+      line-height: 1.21;
+      margin-bottom: 24px;
+    }
+  }
+
+  &__text {
+    font-family: 'Montserrat Alternates';
+    color: $main-color;
+
+    @media screen and ($breakpoint-mobile) {
+      font-weight: 400;
+      font-size: $font-sz-16;
+      line-height: 1.25;
+    }
+
+    @media screen and ($breakpoint-tablet) {
+      font-weight: 400;
+      font-size: $font-sz-16;
+      line-height: 1.25;
+    }
+
+    @media screen and ($breakpoint-decktop) {
+      font-weight: 400;
+      font-size: $font-sz-18;
+      line-height: 1.22;
+    }
+  }
+
+  &__examples-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__examples-first {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and ($breakpoint-mobile) {
+      padding-bottom: 20px;
+    }
+    @media screen and ($breakpoint-tablet) {
+    }
+  }
+
+  &__examples-second {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and ($breakpoint-mobile) {
+      padding-top: 20px;
+    }
+  }
+
+  &__examples-bg {
+    position: relative;
+    border: 1px solid $accent-pink-color;
+    border-radius: 50%;
+
+    @media screen and ($breakpoint-mobile) {
+      padding-top: 28px;
+    }
+  }
+
+  &__examples-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 0;
+  }
+
+  &__examples-title {
+    font-family: 'Montserrat Alternates';
+    color: $white-color;
+
+    @media screen and ($breakpoint-mobile) {
+      font-weight: $font-w-500;
+      font-size: 14px;
+      line-height: 1.21;
+    }
+
+    @media screen and ($breakpoint-tablet) {
+      font-weight: $font-w-500;
+      font-size: $font-sz-16;
+      line-height: 1.25;
+    }
+
+    @media screen and ($breakpoint-decktop) {
+      font-weight: $font-w-500;
+      font-size: 24px;
+      line-height: 1.2;
+    }
+  }
+
+  &__examples-text {
+    font-family: 'Montserrat Alternates';
+    color: $white-color;
+
+    @media screen and ($breakpoint-mobile) {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 1.25;
+    }
+
+    @media screen and ($breakpoint-tablet) {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.21;
+    }
+
+    @media screen and ($breakpoint-decktop) {
+      font-weight: 400;
+      font-size: $font-sz-16;
+      line-height: 1.25;
+    }
+  }
+  &__text--desktop {
+    display: none;
+
+    @media screen and ($breakpoint-decktop) {
+      display: block;
+      font-weight: 400;
+      font-size: $font-sz-18;
+      line-height: 1.22;
+    }
+  }
+}
