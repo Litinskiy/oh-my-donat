@@ -7,19 +7,6 @@
   min-height: 312px;
   text-align: center;
 
-  &:after {
-    display: block;
-    content: '';
-
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    top: 104px;
-    left: 38px;
-
-    background-image: url('../images/header/svg/mobile-main.svg');
-  }
-
   background-image: url('../images/header/mobile-hero@1x.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -43,19 +30,6 @@
       (min-resolution: 2dppx) {
       background-image: url('../images/header/tablet-hero@2x.jpg');
     }
-
-    &:after {
-      display: block;
-      content: '';
-  
-      position: absolute;
-      width: 100px;
-      height: 100px;
-      top: 92px;
-      left: 268px;
-  
-      background-image: url('../images/header/svg/tablet-main.svg');
-    }
   }
 
   @media screen and (min-width: $breakpoint-decktop) {
@@ -69,19 +43,6 @@
       (min-resolution: 2dppx) {
       background-image: url('../images/header/desktop-hero@2x.jpg');
     }
-
-    &:after {
-      display: block;
-      content: '';
-  
-      position: absolute;
-      width: 150px;
-      height: 150px;
-      top: 171px;
-      left: 449px;
-  
-      background-image: url('../images/header/svg/desktop-main.svg');
-    }
   }
 }
 
@@ -94,20 +55,22 @@
   @media screen and (min-width: $breakpoint-tablet) {
     margin-bottom: 28px;
   }
-  @media screen and (min-width: $breakpoint-decktop) {
 
+  @media screen and (min-width: $breakpoint-decktop) {
     justify-content: flex-start;
     align-items: center;
     margin-bottom: 65px;
-  }
 
-  & img {
-    width: 158px;
-    height: 70px;
+    & img {
+      width: 158px;
+      height: 70px;
+    }
   }
 }
 
 .burger {
+  align-self: flex-start;
+
   fill: $main-color;
   background-color: transparent;
   border: none;
@@ -121,7 +84,13 @@
 }
 
 .header__title {
+  position: relative;
+
   margin-bottom: 18px;
+
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
 
   font-family: 'Montserrat Alternates', sans-serif;
   font-weight: $font-w-600;
@@ -129,22 +98,64 @@
   line-height: 1.21;
   letter-spacing: -0.03em;
 
-  @media screen and (min-width: $breakpoint-tablet) {
-    width: 319px;
+  &::after {
+    display: block;
+    content: '';
 
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 18px;
+    left: 18px;
+
+    background-image: url('../images/header/svg/mobile-main.svg');
+  }
+
+  @media screen and (min-width: $breakpoint-tablet) {
+    max-width: 320px;
+
+    margin-left: 0;
+    margin-right: 0;
     margin-bottom: 10px;
 
     font-size: 30px;
     line-height: 1.23;
+    letter-spacing: 0;
+
+    &::after {
+      display: block;
+      content: '';
+  
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      top: -6px;
+      left: 237px;
+       
+      background-image: url('../images/header/svg/tablet-main.svg');
+    }
   }
 
   @media screen and (min-width: $breakpoint-decktop) {
-    width: 757px;
+    max-width: 757px;
 
     margin-bottom: 20px;
 
     font-size: 60px;
     line-height: 1.08;
+
+    &::after {
+      display: block;
+      content: '';
+  
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      top: 0px;
+      left: 433px;
+  
+      background-image: url('../images/header/svg/desktop-main.svg');
+    }
   }
 }
 
@@ -227,9 +238,9 @@
 }
 
 .header .socials {
-  @media screen and (max-width: ($breakpoint-tablet - 1px)) {
-    margin-left: auto;
-    margin-right: auto;
+  @media screen and (min-width: $breakpoint-tablet) {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -391,7 +402,6 @@
       right: 32px;
       
       background-image: url('../images/header/svg/tablet-right-bottom.svg');
-      fill: rgba(60, 50, 45, 0.12);
     }
 
     &::before {
