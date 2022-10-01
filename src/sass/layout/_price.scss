@@ -1,6 +1,6 @@
 .price-section {
   padding-bottom: 20px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $breakpoint-tablet) {
     padding-bottom: 40px;
   }
 }
@@ -10,7 +10,7 @@
   margin-bottom: 27px;
   text-align: center;
   padding-top: 19px;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: ($breakpoint-tablet - 1px)) {
     position: relative;
     &::before {
       display: block;
@@ -35,13 +35,13 @@
       z-index: -5;
     }
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $breakpoint-tablet) {
     margin-bottom: 31px;
     font-weight: 500;
     font-size: 32px;
     line-height: 1, 21;
     padding-top: 39px;
-    @media screen and (min-width: 768px) and (max-width: 1200px) {
+    @media screen and (min-width: $breakpoint-tablet) and (max-width: 1279px) {
       position: relative;
       &::before {
         display: block;
@@ -67,7 +67,7 @@
       }
     }
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $breakpoint-decktop) {
     margin-bottom: 27px;
     padding-top: 50px;
     position: relative;
@@ -97,7 +97,7 @@
 }
 
 .services {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $breakpoint-tablet) {
     display: grid;
     grid-template-columns: auto auto auto;
     align-items: start;
