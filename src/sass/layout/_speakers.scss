@@ -69,6 +69,18 @@
   }
 }
 
+.speakers-section__title {
+  margin-bottom: 12px;
+  text-align: center;
+  @media screen and (min-width: $breakpoint-tablet) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: $breakpoint-decktop) {
+    margin-bottom: 2px;
+  }
+}
+
 .speakers-list__title {
   margin-bottom: 12px;
   font-size: 16px;
@@ -79,6 +91,7 @@
     font-weight: $font-w-600;
     font-size: 18px;
     line-height: 22px;
+    margin-bottom: 20px;
   }
 }
 
@@ -88,4 +101,19 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 12px;
+
+  @media screen and (min-width: $breakpoint-tablet) {
+    margin-bottom: 20px;
+    width: 152px;
+    height: 160px;
+  }
+  @media screen and (min-width: $breakpoint-decktop) {
+    margin-bottom: 20px;
+    width: 288px;
+    height: 305px;
+  }
+}
+
+.section--ring-position {
+  padding-top: 118px;
 }
