@@ -1,12 +1,35 @@
-<section class="abous-us">
+<section class="about-us">
   <div class="container flex-container">
     <div class="about-us__image-wrapper">
-      <img
+      <picture>
+        <source
+          srcset="
+            ./images/header/desktop-logo@1x.png 1x,
+            ./images/header/desktop-logo@2x.png 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            ./images/header/mobile-logo@1x.png 1x,
+            ./images/header/mobile-logo@2x.png 2x
+          "
+          media="(max-width: 1199px)"
+        />
+        <img
+          src="./images/header/mobile-logo@2x.png"
+          alt="Logo"
+          width="108"
+          height="50"
+        />
+      </picture>
+
+      <!-- <img
         class="about-us__image"
         src="./images/images-about/man-baker-mobile.png"
-        width="280"
+        sizes="(max-width:767px) 100vw, (min-width:768px) 50vw"
         alt="Процес приготування пончиків"
-      />
+      /> -->
     </div>
     <div class="about-us__text-wrapper">
       <h2 class="about-us__title">About us</h2>
@@ -27,113 +50,6 @@
         rel="noopener noreferrer"
         >Read more</a
       >
-    </div>
-  </div>
-</section>
-<section class="program">
-  <div class="container">
-    <div class="program__wrapper">
-      <h2 class="program__title">Program</h2>
-      <p class="program__text">
-        Indulge in this immersive sweet treat experience with The Chef Donut
-        Queen in her New York donut shop!
-      </p>
-      <ul class="program__list">
-        <li class="program__item">
-          <svg class="program__icon" width="24" height="24">
-            <use href="./images/icons.svg#icon-hat"></use>
-          </svg>
-          <p class="program__list-text">A stand up history of donuts</p>
-        </li>
-        <li class="program__item">
-          <svg class="program__icon" width="24" height="24">
-            <use href="./images/icons.svg#icon-hat"></use>
-          </svg>
-          <p class="program__list-text">Make 3 donut flavors of your choice</p>
-        </li>
-        <li class="program__item">
-          <svg class="program__icon" width="24" height="24">
-            <use href="./images/icons.svg#icon-hat"></use>
-          </svg>
-          <p class="program__list-text">Enjoy all-you-can-eat donuts</p>
-        </li>
-        <li class="program__item">
-          <svg class="program__icon" width="24" height="24">
-            <use href="./images/icons.svg#icon-hat"></use>
-          </svg>
-          <p class="program__list-text">
-            Cocktail pairings and coffee included
-          </p>
-        </li>
-        <li class="program__item">
-          <svg class="program__icon" width="24" height="24">
-            <use href="./images/icons.svg#icon-hat"></use>
-          </svg>
-          <p class="program__list-text">
-            Photoshoot by professional photographer
-          </p>
-        </li>
-        <li class="program__item">
-          <svg class="program__icon" width="24" height="24">
-            <use href="./images/icons.svg#icon-hat"></use>
-          </svg>
-          <p class="program__list-text">Secret receipt of cooking from Eva</p>
-        </li>
-        <li class="program__item">
-          <svg class="program__icon" width="24" height="24">
-            <use href="./images/icons.svg#icon-hat"></use>
-          </svg>
-          <p class="program__list-text">
-            All products are included in the price
-          </p>
-        </li>
-      </ul>
-      <p class="program__text--desktop">
-        Come with your dear people and friends and you will spend an
-        unforgettable time and will become a real professional in donuts
-        cooking!
-      </p>
-      <a
-        class="program__link"
-        href="#"
-        target="_blank"
-        rel="noopener noreferrer"
-        >Read more</a
-      >
-    </div>
-    <div class="program__examples-container">
-      <div class="program__examples-first">
-        <div class="program_examples-bg">
-          <img src="./images/images-about/example-1-mobile.png" alt="" />
-          <div class="program__examples-wrapper">
-            <h3 class="program__examples-title">Type of the event</h3>
-            <p class="program__examples-text">Cooking classes</p>
-          </div>
-        </div>
-        <div class="program_examples-bg">
-          <img src="./images/images-about/example-2-mobile.png" alt="" />
-          <div class="program__examples-wrapper">
-            <h3 class="program__examples-title">Time of the event</h3>
-            <p class="program__examples-text">18:30 (2.5 hours)</p>
-          </div>
-        </div>
-      </div>
-      <div class="program__examples-second">
-        <div class="program_examples-bg">
-          <img src="./images/images-about/example-3-mobile.png" alt="" />
-          <div class="program__examples-wrapper">
-            <h3 class="program__examples-title">Number of guests</h3>
-            <p class="program__examples-text">1 to 20</p>
-          </div>
-        </div>
-        <div class="program_examples-bg">
-          <img src="./images/images-about/example-4-mobile.png" alt="" />
-          <div class="program__examples-wrapper">
-            <h3 class="program__examples-title">The host speaks</h3>
-            <p class="program__examples-text">English, French</p>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 </section>
