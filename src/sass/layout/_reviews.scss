@@ -5,10 +5,18 @@
     background-size: contain;
     width: 280px;
     height: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (min-width: $breakpoint-tablet) {
+      width: 151px;
+      height: 151px;
+    }
+    @media screen and (min-width: $breakpoint-decktop) {
+      width: 285px;
+      height: 285px;
+    }
   }
   &__name {
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.2;
@@ -22,36 +30,35 @@
     &::before {
       content: '';
       position: absolute;
-      background-image: url('../images/hat.svg');
+      background-image: url('../images/reviews-img/stars.svg');
       //   background-size: contain;
       background-repeat: no-repeat;
       width: 136px;
       height: 24px;
-      top: 0;
-      left: 0;
+      top: -100%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
   }
   &__text {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
     text-align: center;
 
     color: $title-color;
+    height: 220px;
+    position: relative;
   }
 }
 .reviews {
   padding-top: 20px;
+  padding-bottom: 20px;
   &__container {
     display: flex;
     flex-direction: column;
   }
 
   &__title {
-    font-family: 'Montserrat Alternates';
-    font-style: normal;
     font-weight: $font-w-600;
     font-size: 24px;
     line-height: 1.21;
@@ -148,11 +155,9 @@
 
 .slider .slick-arrow {
   position: absolute;
-  bottom: 130px;
-  margin: -30px 0px 0px 0px;
-  z-index: 10;
+  top: 274px;
   font-size: 0;
-  width: 30px;
+  width: 25px;
   height: 60px;
 }
 .slider .slick-arrow.slick-prev {
@@ -189,11 +194,71 @@
   border: 1px solid #fff;
 }
 
-.slider__item {
-  padding: 0px 15px;
-}
+// .slider__item {
+//   padding: 0px 15px;
+// }
 .slider__item img {
   max-width: 100%;
 }
 // .slider__item.slick-center {
 // }
+
+.slides-numbers {
+  color: #9fa5ac;
+  display: none;
+  font-size: 20px;
+  font-weight: 300;
+  left: 50px;
+  position: absolute;
+
+  .active {
+    color: #6caddf;
+    font-size: 30px;
+    margin-right: -6px;
+    position: absolute;
+  }
+
+  .total {
+    margin-left: -5px;
+  }
+}
+
+.slick-arrow {
+  padding: 0;
+  border: 0;
+  outline: none;
+  background: none;
+  background: #6caddf;
+  position: absolute;
+  top: -9px;
+  padding: 10px;
+  border-radius: 10px;
+  z-index: 5;
+  color: #fff;
+  text-transform: lowercase;
+  cursor: pointer;
+
+  &.slick-next {
+    right: 0;
+  }
+
+  &.slick-prev {
+    right: 55px;
+  }
+}
+
+.pagingInfo {
+  font-size: 14px;
+  line-height: 1.2;
+
+  text-align: center;
+
+  color: $black-color;
+  margin-top: 32px;
+  @media screen and (min-width: $breakpoint-tablet) {
+    margin-top: 22px;
+  }
+  @media screen and (min-width: $breakpoint-decktop) {
+    margin-top: 28px;
+  }
+}
