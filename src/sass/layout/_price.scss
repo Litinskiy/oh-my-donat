@@ -9,18 +9,94 @@
   font-family: 'Montserrat Alternates';
   margin-bottom: 27px;
   text-align: center;
+  padding-top: 19px;
+  @media screen and (max-width: 767px) {
+    position: relative;
+    &::before {
+      display: block;
+      content: '';
+      background-image: url('../images/price-img/svg/mobile-middle.svg');
+      position: absolute;
+      width: 32px;
+      height: 32px;
+      top: 411px;
+      left: -16px;
+      z-index: -5;
+    }
+    &::after {
+      display: block;
+      content: '';
+      background-image: url('../images/price-img/svg/mobile-top.svg');
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      right: 0px;
+      top: 12px;
+      z-index: -5;
+    }
+  }
   @media screen and (min-width: 768px) {
     margin-bottom: 31px;
     font-weight: 500;
     font-size: 32px;
     line-height: 1, 21;
+    padding-top: 39px;
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+      position: relative;
+      &::before {
+        display: block;
+        content: '';
+        background-image: url('../images/price-img/svg/tab-grey.svg');
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        top: 33px;
+        right: 28px;
+        z-index: -5;
+      }
+      &::after {
+        display: block;
+        content: '';
+        background-image: url('../images/price-img/svg/tab-pink.svg');
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        top: 255px;
+        right: 648px;
+        z-index: -5;
+      }
+    }
   }
   @media screen and (min-width: 1200px) {
     margin-bottom: 27px;
+    padding-top: 50px;
+    position: relative;
+    &::before {
+      display: block;
+      content: '';
+      background-image: url('../images/price-img/svg/desk-before.svg');
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      top: 33px;
+      right: 28px;
+      z-index: -5;
+    }
+    &::after {
+      display: block;
+      content: '';
+      background-image: url('../images/price-img/svg/desk-after.svg');
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      top: 670px;
+      right: 818px;
+      z-index: -5;
+    }
   }
 }
 
-.card-grid {
+.services {
   @media screen and (min-width: 768px) {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -113,6 +189,9 @@
     font-size: 18px;
     line-height: 1.37;
     margin-bottom: 18px;
+    max-width: 212px;
+    margin-left: auto;
+    margin-right: auto;
 
     @media screen and (min-width: 768px) {
       margin-bottom: 17px;
@@ -126,6 +205,48 @@
       font-size: 20px;
       line-height: 1.2;
       max-width: none;
+    }
+  }
+
+  &__title--circle {
+    @media screen and (max-width: 767px) {
+      position: relative;
+      &::before {
+        display: block;
+        content: '';
+        background-image: url('../images/price-img/svg/mob-middle-small.svg');
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 15px;
+        right: -54px;
+        z-index: -5;
+      }
+      &::after {
+        display: block;
+        content: '';
+        background-image: url('../images/price-img/svg/mobile-last.svg');
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        top: 485px;
+        right: -48px;
+        z-index: -5;
+      }
+    }
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+      position: relative;
+      &::after {
+        display: block;
+        content: '';
+        background-image: url('../images/price-img/svg/tab-pink-bottom.svg');
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        top: 520px;
+        right: 14px;
+        z-index: -5;
+      }
     }
   }
 
