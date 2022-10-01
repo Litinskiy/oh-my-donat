@@ -11,6 +11,12 @@
   text-align: center;
   @media screen and (min-width: 768px) {
     margin-bottom: 31px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1, 21;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 27px;
   }
 }
 
@@ -19,6 +25,7 @@
     display: grid;
     grid-template-columns: auto auto auto;
     align-items: start;
+    grid-auto-rows: auto;
   }
 }
 
@@ -30,11 +37,24 @@
   border-radius: 25px;
   padding-bottom: 20px;
   padding-top: 18px;
+  &:nth-child(even) {
+    border: 1px solid #f3848c;
+  }
   @media screen and (min-width: 480px) {
     max-width: 450px;
   }
   @media screen and (min-width: 768px) {
     max-width: 225px;
+    height: 100%;
+    align-content: space-between;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 395px;
+    padding-top: 28px;
+    padding-bottom: 40px;
+    &:not(:last-child) {
+      margin-right: 32px;
+    }
   }
 
   box-shadow: 10px 15px 25px rgba(210, 201, 201, 0.45);
@@ -45,10 +65,19 @@
   &__meta-wrapper {
     padding-left: 40px;
     padding-right: 18px;
+    @media screen and (min-width: 768px) {
+      padding-right: 10px;
+    }
+    @media screen and (min-width: 1200px) {
+      padding-left: 50px;
+    }
   }
 
   &__list {
     margin-bottom: 31px;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 40px;
+    }
   }
 
   &__title {
@@ -58,11 +87,19 @@
     font-size: 18px;
     line-height: 1.37;
     margin-bottom: 18px;
+
     @media screen and (min-width: 768px) {
       margin-bottom: 17px;
       max-width: 189px;
       margin-left: auto;
       margin-right: auto;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 40px;
+      font-size: 20px;
+      line-height: 1.2;
+      max-width: none;
     }
   }
 
@@ -81,6 +118,16 @@
     @media screen and (min-width: 768px) {
       font-size: 16px;
       line-height: 1.25;
+      max-width: 200px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-left: 0;
+      max-width: 329px;
+      font-size: 18px;
+      line-height: 1.22;
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
     }
   }
 
@@ -100,5 +147,8 @@
   &__button {
     margin-left: auto;
     margin-right: auto;
+    @media screen and (min-width: 768px) {
+      justify-content: flex-end;
+    }
   }
 }
