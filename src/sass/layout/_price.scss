@@ -1,6 +1,6 @@
 .price-section {
   padding-bottom: 20px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $breakpoint-tablet) {
     padding-bottom: 40px;
   }
 }
@@ -10,7 +10,7 @@
   margin-bottom: 27px;
   text-align: center;
   padding-top: 19px;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: ($breakpoint-tablet - 1px)) {
     position: relative;
     &::before {
       display: block;
@@ -35,13 +35,13 @@
       z-index: -5;
     }
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $breakpoint-tablet) {
     margin-bottom: 31px;
     font-weight: 500;
     font-size: 32px;
     line-height: 1, 21;
     padding-top: 39px;
-    @media screen and (min-width: 768px) and (max-width: 1200px) {
+    @media screen and (min-width: $breakpoint-tablet) and (max-width: 1279px) {
       position: relative;
       &::before {
         display: block;
@@ -67,7 +67,7 @@
       }
     }
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $breakpoint-decktop) {
     margin-bottom: 27px;
     padding-top: 50px;
     position: relative;
@@ -97,7 +97,7 @@
 }
 
 .services {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $breakpoint-tablet) {
     display: grid;
     grid-template-columns: auto auto auto;
     align-items: start;
@@ -127,10 +127,10 @@
     background-image: url('../images/price-img/donuts-mobile2.png');
   }
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: $breakpoint-mobile) {
     max-width: 450px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $breakpoint-tablet) {
     max-width: 225px;
     height: 100%;
     align-content: space-between;
@@ -142,7 +142,7 @@
       background-image: url('../images/price-img/donuts-tablet2.png');
     }
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $breakpoint-decktop) {
     max-width: 395px;
     padding-top: 28px;
     padding-bottom: 40px;
@@ -167,17 +167,17 @@
   &__meta-wrapper {
     padding-left: 40px;
     padding-right: 18px;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $breakpoint-tablet) {
       padding-right: 10px;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $breakpoint-decktop) {
       padding-left: 50px;
     }
   }
 
   &__list {
     margin-bottom: 31px;
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $breakpoint-decktop) {
       margin-bottom: 40px;
     }
   }
@@ -193,14 +193,14 @@
     margin-left: auto;
     margin-right: auto;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $breakpoint-tablet) {
       margin-bottom: 17px;
       max-width: 189px;
       margin-left: auto;
       margin-right: auto;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $breakpoint-decktop) {
       margin-bottom: 40px;
       font-size: 20px;
       line-height: 1.2;
@@ -234,7 +234,7 @@
         z-index: -5;
       }
     }
-    @media screen and (min-width: 768px) and (max-width: 1200px) {
+    @media screen and (min-width: $breakpoint-tablet) and (max-width: 1280px) {
       position: relative;
       &::after {
         display: block;
@@ -262,12 +262,12 @@
       margin-left: auto;
       margin-right: auto;
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $breakpoint-tablet) {
       font-size: 16px;
       line-height: 1.25;
       max-width: 200px;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $breakpoint-decktop) {
       margin-left: 0;
       max-width: 329px;
       font-size: 18px;
@@ -294,7 +294,7 @@
   &__button {
     margin-left: auto;
     margin-right: auto;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $breakpoint-tablet) {
       justify-content: flex-end;
     }
   }
