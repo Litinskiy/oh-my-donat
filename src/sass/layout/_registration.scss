@@ -1,18 +1,90 @@
 
 .registration{
-    max-width: 480px;
+    position: relative;
+    // max-width: 480px;
     margin: 0 auto;
     padding-bottom: 20px;
     padding-top: 20px;
-}
-// .registration-container{
-    
-//     width: 100%;
-//     padding: 40px 8px 32px 8px;
-//     height: auto;
-//     margin: 0 auto;
 
-// }
+    &:after {
+        display: block;
+        content: '';
+    
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        top: 60px;
+        right: 10px;
+        z-index: -1;
+    
+        background-image: url('../images/registration-img/Decor1.svg');
+        }
+
+
+}
+
+.registration-container{
+    width: 100%;
+    padding: 40px 8px 32px 8px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10px;
+
+    // linear-gradient(rgba(61, 44, 44, 1)),rgba(61, 44, 44, 1),
+background-image: 
+    url("../images/registration-img/topping-on-strawberry-mob1x.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media screen and (min-width: 768px) {
+    background-image:url("../images/registration-img/topping-on-strawberry-tab1x.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    }
+
+
+// @media (min-device-pixel-ratio: 2),
+//     screen and (min-resolution: 192dpi),
+//     screen and (min-resolution: 2dppx) {
+//         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+//             url(/images/hero/hero-mob@2x.jpg);
+//     }
+
+//     @media screen and (min-width: 768px) {
+//         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+//             url(/images/hero/hero-tablet.jpg);
+
+//         @media (min-device-pixel-ratio: 2),
+//         screen and (min-resolution: 192dpi),
+//         screen and (min-resolution: 2dppx) {
+//             background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+//                 url(/images/hero/hero-tablet@2x.jpg);
+//         }
+//     }
+
+//     @media screen and (min-width: 1200px) {
+//         padding-top: 200px;
+//         padding-bottom: 280px;
+
+//         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+//             url(/images/hero/hero-desk.jpg);
+
+//         @media (min-device-pixel-ratio: 2),
+//         screen and (min-resolution: 192dpi),
+//         screen and (min-resolution: 2dppx) {
+//             background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+//                 url(/images/hero/hero-desk@2x.jpg);
+//         }
+//     }
+
+}
+
+.footer-photo{
+    margin: 0 auto;
+}
 
 .registration__title{
     margin-top: 40px;
@@ -34,11 +106,6 @@
     text-align: center;
     color: $white-color;
 }
-
-
-    // background-color: var(--accent-color);
-    // transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 
 .registration-container__text{
     margin-bottom: 20px;
@@ -70,18 +137,13 @@
     color: $white-color;
 }
 
-// .registration-form::placeholder {
-//     font-size: 100px;
-//     line-height: 1.25;
-//     color: $white-color;
-// }
-
 .registration-form__input{
     width: 100%;
     margin-bottom: 22px;
     font-size: 16px;
     line-height: 1.25;
-    color:$white-color;
+    color: $white-color;
+    background-color: transparent;
 }
 
 .registration-form__input:last-child{
