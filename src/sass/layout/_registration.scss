@@ -43,12 +43,15 @@ background-image: linear-gradient(to right, rgba(61,44,44,0.6), rgba(61,44,44,0.
     background-size: cover;
 
     @media screen and (min-width: 768px) {
-    background-image: url("../images/registration-img/Rectangle-tab1x.png"), url("../images/registration-img/topping-on-strawberry-tab1x.png");
-    background-position: right, left;
+    background-image: url("../images/registration-img/Rectangle-tab1x.png"), 
+    url("../images/registration-img/topping-on-strawberry-tab1x.png");
+    background-position: left, right;
     background-repeat: no-repeat;
-    background-size: cover;
-    
-    display: flex
+    background-size: 570px, 450px;
+    height: 246px;
+    display: flex;
+    align-items: center;
+    padding: 40px 40px 32px 62px;
     }
 }
 
@@ -110,8 +113,11 @@ background-image: linear-gradient(to right, rgba(61,44,44,0.6), rgba(61,44,44,0.
 
     @media screen and (min-width: 768px) {
         color: #000000;
+        max-width: 90px;
+        margin-bottom: 0;
+            }
         }
-}
+
 
 .registration-container__text{
     margin-bottom: 20px;
@@ -122,6 +128,8 @@ background-image: linear-gradient(to right, rgba(61,44,44,0.6), rgba(61,44,44,0.
     @media screen and (min-width: 768px) {
         line-height: 20px;      
         color: #000000;
+        text-align: left;
+        margin-bottom: 16px;
     }
 }
 
@@ -147,11 +155,18 @@ background-image: linear-gradient(to right, rgba(61,44,44,0.6), rgba(61,44,44,0.
     margin: 0 auto;
     color: $white-color;
 
+    @media screen and (min-width: 768px) {
+    max-width: 237px;
+    }
+
 }
+
+
 
 .registration-form__input{
     width: 100%;
     margin-bottom: 22px;
+    padding-bottom: 2px;
     font-size: 16px;
     line-height: 1.25;
     border-bottom: 1px solid #FFFFFF;
@@ -159,17 +174,23 @@ background-image: linear-gradient(to right, rgba(61,44,44,0.6), rgba(61,44,44,0.
     background-color: transparent;
 
     @media screen and (min-width: 768px) {
+        margin-bottom: 16px;
         line-height: 1, 25;
         color: rgba(0, 0, 0, 0.5);
-        }
+        border-bottom: 1px solid rgba(0, 0, 0, 1);
+     }
 }
 
-.registration-form__input:last-child{
-        margin-bottom: 34px;
-    }
+.registration-form__input:last-child {
+    margin-bottom: 34px;
+}
+
+
     
 .registration-form__button{
     @media screen and (min-width: 768px) {
         height: 40px;
+        margin-top: auto;
+        margin-bottom: auto;
         }
 }
