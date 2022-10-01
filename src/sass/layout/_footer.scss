@@ -4,6 +4,20 @@
     padding: 20px 20px 50px 20px;
     max-width: 480px;
     margin: 0 auto;
+
+
+    &::after {
+        display: block;
+        content: '';
+        position: absolute;
+        width: 60px;
+        height: 40px;
+        bottom: 50%;
+        left: 50%;
+        transform: translate(-40%, 60%);
+        background-image: url('../images/registration-img/colorful-and-tasty-mob1x.png');
+        }
+
 }
 
 .footer-list{
@@ -11,20 +25,14 @@
     justify-content: space-between;
 }
 
-.footer-photo {
-    margin: 0 auto;
-}
-
  @media screen and (min-width: 768px) {
     .footer__icon{
         display: none;
     }
-    .footer-photo {
-        position: absolute;
-        bottom: 532px;
-        left: -80px;
-    }
- }
+}
+
+
+
  .footer__contact-link{
     line-height: 1.25;
     color: $title-color;

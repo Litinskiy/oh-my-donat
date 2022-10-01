@@ -25,6 +25,7 @@
 }
 
 .registration-container{
+    position: relative;
     width: 100%;
     padding: 40px 8px 32px 8px;
     height: auto;
@@ -36,8 +37,6 @@
 background-image: linear-gradient(to right, rgba(61,44,44,0.6), rgba(61,44,44,0.6)),
     url("../images/registration-img/topping-on-strawberry-mob1x.png");
 
-
-    
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -51,10 +50,33 @@ background-image: linear-gradient(to right, rgba(61,44,44,0.6), rgba(61,44,44,0.
     height: 246px;
     display: flex;
     align-items: center;
-    padding: 40px 40px 32px 62px;
-    }
-}
+    padding: 0 40px 0 62px;
 
+    &::after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 67px;
+    bottom: 20px;
+    left: 23px;
+    background-image: url('../images/registration-img/colorful-and-tasty-tab1x.png');
+        }
+    }
+    
+    @media screen and (min-width: 1200px) {
+        &::after {
+            display: block;
+            content: '';
+            position: absolute;
+            width: 200px;
+            height: 133px;
+            bottom: 16px;
+            left: 15px;
+            background-image: url('../images/registration-img/colorful-and-tasty-desk1x.png');
+            }
+}
+}
 // @media (min-device-pixel-ratio: 2),
 //     screen and (min-resolution: 192dpi),
 //     screen and (min-resolution: 2dppx) {
@@ -90,7 +112,6 @@ background-image: linear-gradient(to right, rgba(61,44,44,0.6), rgba(61,44,44,0.
 //     }
 
 
-
 .registration__title{
     margin-top: 40px;
     margin-bottom: 27px;
@@ -122,13 +143,14 @@ background-image: linear-gradient(to right, rgba(61,44,44,0.6), rgba(61,44,44,0.
 .registration-container__text{
     margin-bottom: 20px;
     line-height: 1.25;
-    text-align: center;
     color: $white-color;
+
 
     @media screen and (min-width: 768px) {
         color: #000000;
         text-align: left;
         margin-bottom: 16px;
+        width: 200px;
     }
 }
 
@@ -140,15 +162,13 @@ background-image: linear-gradient(to right, rgba(61,44,44,0.6), rgba(61,44,44,0.
     display: inline-block;
     left: 0px;
     top: 40px;
-
+   
     width: 100%;
     border: 1px solid rgba(255, 255, 255, 1);
 
     @media screen and (min-width: 768px) {
-        width: 2px;
-        border: 1px solid rgba(0, 0, 0, 0.5);
+   
     }
-
 }
 
 
@@ -159,14 +179,28 @@ background-image: linear-gradient(to right, rgba(61,44,44,0.6), rgba(61,44,44,0.
     width: 100%;
     // align-items: center;
     text-align: center;
-    margin: 0 auto;
     color: $white-color;
 
     @media screen and (min-width: 768px) {
+    position: relative;
     max-width: 237px;
+    margin-left: 56px;
+    margin-right: 74px;
+
+    &:after{
+        position: absolute;
+        width: 154px;
+        rotate: 90deg;
+        display: block;
+        content: '';
+        display: inline-block;
+        left: -104px;
+        top: 42%;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+    }
+    }
     }
 
-}
 
 
 
@@ -185,11 +219,16 @@ background-image: linear-gradient(to right, rgba(61,44,44,0.6), rgba(61,44,44,0.
         line-height: 1, 25;
         color: rgba(0, 0, 0, 0.5);
         border-bottom: 1px solid rgba(0, 0, 0, 1);
+        
      }
 }
 
 .registration-form__input:last-child {
     margin-bottom: 34px;
+
+    // @media screen and (min-width: 768px) {
+    //         margin-bottom: 52px;
+    //     }
 }
 
 
