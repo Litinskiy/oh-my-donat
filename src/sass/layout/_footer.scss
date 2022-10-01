@@ -21,7 +21,11 @@
     }
     .footer-photo {
         position: absolute;
-        bottom: 428px;
+        bottom: 532px;
         left: -80px;
     }
+ }
+ .footer__contact-link{
+    line-height: 1.25;
+    color: $title-color;
  }

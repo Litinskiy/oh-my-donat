@@ -121,12 +121,11 @@ background-image: linear-gradient(to right, rgba(61,44,44,0.6), rgba(61,44,44,0.
 
 .registration-container__text{
     margin-bottom: 20px;
-    line-height: 20px;
+    line-height: 1.25;
     text-align: center;
     color: $white-color;
 
     @media screen and (min-width: 768px) {
-        line-height: 20px;      
         color: #000000;
         text-align: left;
         margin-bottom: 16px;
@@ -144,13 +143,21 @@ background-image: linear-gradient(to right, rgba(61,44,44,0.6), rgba(61,44,44,0.
 
     width: 100%;
     border: 1px solid rgba(255, 255, 255, 1);
+
+    @media screen and (min-width: 768px) {
+        width: 2px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+    }
+
 }
+
+
 
 .registration-form{
     display: flex;
     flex-direction: column;
     width: 100%;
-    align-items: center;
+    // align-items: center;
     text-align: center;
     margin: 0 auto;
     color: $white-color;

@@ -4,6 +4,11 @@
     padding-top: 20px;
     padding-bottom: 20px;
 
+    @media screen and (min-width: 768px) {
+        padding-top: 68px;
+        padding-bottom: 80px;
+    }
+
 
     &::after {
         display: block;
@@ -42,17 +47,27 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin: 0 auto;
     align-items: center;
     color: $white-color;
+
+    @media screen and (min-width: 768px) {
+    width: 336px;
+    }
 }
 
 .contact-form__input {
     width: 100%;
     font-size: 16px;
     line-height: 1.25;
+    padding-bottom: 2px;
     border-bottom: 1px solid #000000;
     color: rgba(0, 0, 0, 0.5);
     background-color: transparent;
+
+    @media screen and (min-width: 768px) {
+
+        }
 
 }
 
