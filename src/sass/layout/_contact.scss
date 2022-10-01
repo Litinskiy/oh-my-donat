@@ -1,13 +1,7 @@
 
 .contact{
-    max-width: 480px;
-    margin-top: 40px;
-}
-
-.contact__container{
-    width: 100%;
-    max-width: 280px;
-    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .contact__title {
@@ -37,10 +31,23 @@
 
 .contact-form__input {
     width: 100%;
-    margin-bottom: 28px;
     font-size: 16px;
     line-height: 1.25;
     color: rgba(0, 0, 0, 0.5);
+    border-color: transparent;
+
+}
+
+.contact-form__label{
+    width: 100%;
+}
+
+.contact-form__label:nth-child(1) {
+    margin-bottom: 20px;
+}
+
+.contact-form__label:nth-child(2) {
+    margin-bottom: 28px;
 }
 
 .contact-button{

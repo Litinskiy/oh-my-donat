@@ -1,1 +1,55 @@
-<section>Test</section>
+<section class="about-us">
+  <div class="container flex-container">
+    <div class="about-us__image-wrapper">
+      <picture>
+        <source
+          srcset="
+            ./images/header/desktop-logo@1x.png 1x,
+            ./images/header/desktop-logo@2x.png 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            ./images/header/mobile-logo@1x.png 1x,
+            ./images/header/mobile-logo@2x.png 2x
+          "
+          media="(max-width: 1199px)"
+        />
+        <img
+          src="./images/header/mobile-logo@2x.png"
+          alt="Logo"
+          width="108"
+          height="50"
+        />
+      </picture>
+
+      <!-- <img
+        class="about-us__image"
+        src="./images/images-about/man-baker-mobile.png"
+        sizes="(max-width:767px) 100vw, (min-width:768px) 50vw"
+        alt="Процес приготування пончиків"
+      /> -->
+    </div>
+    <div class="about-us__text-wrapper">
+      <h2 class="about-us__title">About us</h2>
+      <p class="about-us__text">
+        Oh My Donut is the shop which adores tasty deserts and spend hours to
+        create sophisticated donuts which will save the world!
+      </p>
+      <p class="about-us__text--indent">
+        Eva has been baking since she was six years old and over the last 49
+        years, she has created hundreds of cakes for weddings and has baked for
+        many celebrities. Eva and our shop have received multiple awards &
+        recognition for excellence.
+      </p>
+      <a
+        class="about-us__link"
+        href="#"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Read more</a
+      >
+    </div>
+  </div>
+</section>
