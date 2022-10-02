@@ -6,8 +6,11 @@
       <label class="contact-form__label">
         <input
           class="contact-form__input"
-          type="name"
+          type="mail"
           name="mail"
+          required
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+          title="Use @ Use .com"
           placeholder="Email"
         />
       </label>
@@ -15,8 +18,9 @@
       <label class="contact-form__label">
         <input
           class="contact-form__input"
-          type="phone"
-          name="phone"
+          required
+          parent="[А-Яа-яЁё]{6,}"
+          title="Use letters only"
           placeholder="Type your question"
         />
       </label>
