@@ -1,13 +1,28 @@
 
 .contact{
-    max-width: 480px;
-    margin-top: 40px;
-}
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
 
-.contact__container{
-    width: 100%;
-    max-width: 280px;
-    margin: 0 auto;
+    @media screen and (min-width: 768px) {
+        padding-top: 68px;
+        padding-bottom: 80px;
+    }
+
+    &::after {
+        display: block;
+        content: '';
+        
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        top: 5px;
+        left: 35px;
+        z-index: -1;
+        
+        background-image: url('../images/registration-img/Decor2.svg');
+    }
+
 }
 
 .contact__title {
@@ -31,16 +46,40 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin: 0 auto;
     align-items: center;
     color: $white-color;
+
+    @media screen and (min-width: 768px) {
+    width: 336px;
+    }
 }
 
 .contact-form__input {
     width: 100%;
-    margin-bottom: 28px;
     font-size: 16px;
     line-height: 1.25;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #000000;
     color: rgba(0, 0, 0, 0.5);
+    background-color: transparent;
+
+    @media screen and (min-width: 768px) {
+
+    }
+
+}
+
+.contact-form__label{
+    width: 100%;
+}
+
+.contact-form__label:nth-child(1) {
+    margin-bottom: 20px;
+}
+
+.contact-form__label:nth-child(2) {
+    margin-bottom: 28px;
 }
 
 .contact-button{

@@ -1,6 +1,23 @@
 .footer{
-    margin-top: 40px;
-    min-width: 280px;
+    position: relative;
+    width: 100%;
+    padding: 20px 20px 50px 20px;
+    max-width: 480px;
+    margin: 0 auto;
+
+
+    &::after {
+        display: block;
+        content: '';
+        position: absolute;
+        width: 60px;
+        height: 40px;
+        bottom: 50%;
+        left: 50%;
+        transform: translate(-40%, 60%);
+        background-image: url('../images/registration-img/colorful-and-tasty-mob1x.png');
+        }
+
 }
 
 .footer-list{
@@ -8,7 +25,15 @@
     justify-content: space-between;
 }
 
-.footer__contact-link{
-line-height: 1.25;
-color: #2E2520;
+ @media screen and (min-width: 768px) {
+    .footer__icon{
+        display: none;
+    }
 }
+
+
+
+ .footer__contact-link{
+    line-height: 1.25;
+    color: $title-color;
+ }
