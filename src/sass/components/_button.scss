@@ -10,6 +10,10 @@
   line-height: 1.2;
   width: 145px;
 
+  transition: color $time $timing-function,
+     background-color $time $timing-function,
+     filter $time $timing-function;
+
   &:hover,
   &:focus {
     background-color: $white-color;
