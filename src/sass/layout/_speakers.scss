@@ -23,6 +23,7 @@
 
   text-align: center;
   list-style: none;
+
   @media (max-width: 768px) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -42,7 +43,16 @@
   }
 }
 
-// .speakers-list__item {
+.speakers-list__item {
+  &:hover,
+  &:focus {
+    transition-property: box-shadow transform;
+    transition-duration: 0.3s;
+    transition-delay: 0s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transform: scale(1.03);
+  }
+}
 //   @media (max-width: 768px) {
 //     width: calc((100% - 40px) / 2);
 //     margin: 10px;
@@ -92,20 +102,11 @@
 .speakers-section__title {
   margin-bottom: 12px;
   text-align: center;
-  @media screen and (min-width: $breakpoint-tablet) {
-    margin-bottom: 20px;
-  }
 
-  @media screen and (min-width: $breakpoint-decktop) {
-    margin-bottom: 2px;
-  }
-}
-
-.speakers-list__title {
-  margin-bottom: 12px;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
+  font-family: 'Montserrat Alternates';
+  font-size: 24px;
+  line-height: 1.21;
+  font-weight: $font-w-500;
 
   &::before {
     display: block;
@@ -124,10 +125,10 @@
   }
 
   @media screen and (min-width: $breakpoint-tablet) {
-    font-weight: $font-w-600;
-    font-size: 18px;
-    line-height: 22px;
     margin-bottom: 20px;
+
+    font-size: 32px;
+    line-height: 1.21;
 
     &::before {
       display: block;
@@ -144,8 +145,26 @@
 
       background-image: url('../images/speakers-images/svg/tabl-half-right.svg');
     }
+    &::after {
+      display: block;
+      content: '';
+
+      width: 23px;
+      height: 40px;
+
+      position: absolute;
+
+      top: 79px;
+      left: 0px;
+      background-repeat: no-repeat;
+
+      background-image: url('../images/speakers-images/svg/tabl-half-left.svg');
+    }
   }
+
   @media screen and (min-width: $breakpoint-decktop) {
+    margin-bottom: 2px;
+
     &::before {
       display: block;
       content: '';
@@ -161,6 +180,37 @@
 
       background-image: url('../images/speakers-images/svg/dt_half-right.svg');
     }
+    &::after {
+      display: none;
+      content: '';
+
+      width: 23px;
+      height: 40px;
+
+      position: absolute;
+
+      top: 79px;
+      left: 0px;
+      background-repeat: no-repeat;
+
+      background-image: url('../images/speakers-images/svg/tabl-half-left.svg');
+    }
+  }
+}
+
+.speakers-list__title {
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+
+  @media screen and (min-width: $breakpoint-tablet) {
+    font-weight: $font-w-600;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: $breakpoint-decktop) {
   }
 }
 
@@ -196,5 +246,156 @@
   @media screen and (min-width: $breakpoint-decktop) {
     padding-top: 59px;
     padding-bottom: 43px;
+  }
+}
+
+.speakers-list__image--ring-position {
+  position: relative;
+  &::after {
+    display: block;
+    content: '';
+
+    width: 16px;
+    height: 16px;
+
+    position: absolute;
+
+    bottom: 74px;
+    right: 25px;
+    background-repeat: no-repeat;
+
+    background-image: url('../images/speakers-images/svg/mobile_sm.svg');
+  }
+  @media screen and (min-width: $breakpoint-tablet) {
+    &::after {
+      display: none;
+    }
+  }
+  @media screen and (min-width: $breakpoint-decktop) {
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.speakers-list__image--second-ring-position {
+  position: relative;
+  &::after {
+    display: block;
+    content: '';
+
+    width: 16px;
+    height: 16px;
+
+    position: absolute;
+
+    bottom: 74px;
+    right: 35px;
+    background-repeat: no-repeat;
+
+    background-image: url('../images/speakers-images/svg/mobile_sm.svg');
+  }
+  @media screen and (min-width: $breakpoint-tablet) {
+    &::after {
+      display: block;
+      content: '';
+
+      width: 40px;
+      height: 40px;
+
+      position: absolute;
+
+      top: -42px;
+      right: -41px;
+      background-repeat: no-repeat;
+
+      background-image: url('../images/speakers-images/svg/tabl_left40.svg');
+    }
+    &::before {
+      display: block;
+      content: '';
+
+      width: 32px;
+      height: 32px;
+
+      position: absolute;
+
+      top: -67px;
+      left: 45px;
+      background-repeat: no-repeat;
+
+      background-image: url('../images/speakers-images/svg/mobile_sm.svg');
+    }
+  }
+  @media screen and (min-width: $breakpoint-decktop) {
+    &::after {
+      display: none;
+      content: '';
+
+      width: 16px;
+      height: 16px;
+
+      position: absolute;
+
+      bottom: 74px;
+      right: 35px;
+      background-repeat: no-repeat;
+
+      background-image: url('../images/speakers-images/svg/mobile_sm.svg');
+    }
+    &::before {
+      display: none;
+      content: '';
+
+      width: 50px;
+      height: 50px;
+
+      position: absolute;
+
+      top: -67px;
+      left: 45px;
+      background-repeat: no-repeat;
+
+      background-image: url('../images/speakers-images/svg/mobile_sm.svg');
+    }
+  }
+}
+
+.speakers-list__image--third-ring-position {
+  position: relative;
+  @media screen and (min-width: $breakpoint-tablet) {
+    &::before {
+      display: block;
+      content: '';
+
+      width: 50px;
+      height: 50px;
+
+      position: absolute;
+
+      top: -75px;
+      left: 20px;
+      background-repeat: no-repeat;
+
+      background-image: url('../images/speakers-images/svg/tabl_title50.svg');
+    }
+  }
+
+  @media screen and (min-width: $breakpoint-decktop) {
+    &::before {
+      display: block;
+      content: '';
+
+      width: 50px;
+      height: 50px;
+
+      position: absolute;
+
+      top: -50px;
+      left: 20px;
+      background-repeat: no-repeat;
+
+      background-image: url('../images/speakers-images/svg/tabl_title50.svg');
+    }
   }
 }
