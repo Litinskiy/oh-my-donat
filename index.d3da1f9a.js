@@ -1,0 +1,2 @@
+function scrollFunction(){document.body.scrollTop>200||document.documentElement.scrollTop>200?document.getElementById("up").classList.add("btn-style"):document.getElementById("up").classList.remove("btn-style")}function topFunction(){document.body.scrollTop=0,document.documentElement.scrollTop=0}window.onscroll=function(){scrollFunction()},document.getElementById("up").addEventListener("click",topFunction);
+//# sourceMappingURL=index.d3da1f9a.js.map

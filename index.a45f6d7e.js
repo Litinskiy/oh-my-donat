@@ -1,0 +1,2 @@
+$(document).ready((function(){$(".slider").slick({arrows:!0,dots:!1,slidesToShow:3,centerPadding:"10px",centerMode:!0,speed:1e3,autoplaySpeed:800,responsive:[{breakpoint:1279,settings:{centerMode:!0,centerPadding:"10px",slidesToShow:3}},{breakpoint:767,settings:{slidesToShow:1,centerPadding:"10px",centerMode:!0}}]})}));var e=$(".pagingInfo");$(".slider").on("init reInit afterChange",(function(n,t,i,o){var d=(i||0)+1;e.text(d+"/"+t.slideCount)}));
+//# sourceMappingURL=index.a45f6d7e.js.map
