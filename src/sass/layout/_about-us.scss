@@ -18,6 +18,7 @@
     font-family: 'Montserrat Alternates';
     color: $main-color;
     font-weight: $font-w-500;
+    position: relative;
 
     @media screen and (max-width: 767px) {
       font-size: 24px;
@@ -33,6 +34,29 @@
       font-size: 32px;
       line-height: 1.21;
       margin-bottom: 28px;
+    }
+
+    &::after {
+      content: '';
+      width: 80px;
+      height: 80px;
+      background-image: url('../images/images-about/ellipse/ellipse-about.png');
+      position: absolute;
+      top: 11px;
+      left: 194px;
+
+      @media screen and (min-width: $breakpoint-tablet) {
+        top: 62px;
+        left: 85px;
+      }
+
+      @media screen and (min-width: $breakpoint-decktop) {
+        width: 100px;
+        height: 100px;
+        top: 46px;
+        left: 130px;
+        background-size: contain;
+      }
     }
   }
 
@@ -85,51 +109,18 @@
   }
 
   &__text--more {
-    font-family: 'Montserrat';
-    color: $main-color;
-    font-size: $font-sz-16;
-    font-weight: 400;
-    line-height: 1.25;
-
-    margin: 0 auto;
-
-    @media screen and (max-width: 767px) {
-      display: none;
-    }
-
-    @media screen and (min-width: $breakpoint-tablet) {
-      display: none;
-    }
-
     @media screen and (min-width: $breakpoint-decktop) {
       display: block;
-      font-size: $font-sz-18;
-      line-height: 1.22;
-    }
-  }
-
-  &__link {
-    font-family: 'Montserrat';
-    color: $main-color;
-    font-weight: $font-w-500;
-
-    @media screen and (max-width: 767px) {
-      font-size: $font-sz-16;
-      line-height: 1.25;
-    }
-
-    @media screen and (min-width: $breakpoint-tablet) {
+      width: 392px;
+      font-weight: 400;
       font-size: $font-sz-18;
       line-height: 1.22;
     }
 
-    @media screen and (min-width: $breakpoint-decktop) {
-      display: none;
-    }
-
-    &:hover,
-    &:focus {
-      color: $accent-pink-color;
+    &.is-hidden {
+      @media screen and (min-width: $breakpoint-decktop) {
+        display: inline;
+      }
     }
   }
 
@@ -149,6 +140,77 @@
       min-width: 100%;
     }
   }
+
+  &__button {
+    font-family: 'Montserrat';
+    color: $main-color;
+    font-weight: $font-w-500;
+    background-color: inherit;
+
+    @media screen and (max-width: 767px) {
+      font-size: $font-sz-16;
+      line-height: 1.25;
+
+      display: inline-block;
+      padding-bottom: 24px;
+    }
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      font-size: $font-sz-18;
+      line-height: 1.22;
+    }
+
+    @media screen and (min-width: $breakpoint-decktop) {
+      display: none;
+    }
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      transition-property: box-shadow transform;
+      transition-duration: 0.3s;
+      transition-delay: 0s;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transform: scale(1.03);
+      box-shadow: 0 0 5px 3px rgb(243 132 140 / 42%);
+    }
+
+    &--close {
+      font-family: 'Montserrat';
+      color: $main-color;
+      font-weight: $font-w-500;
+      background-color: inherit;
+      margin-top: 15px;
+
+      @media screen and (max-width: 767px) {
+        font-size: $font-sz-16;
+        line-height: 1.25;
+
+        display: inline-block;
+        padding-bottom: 24px;
+      }
+
+      @media screen and (min-width: $breakpoint-tablet) {
+        font-size: $font-sz-18;
+        line-height: 1.22;
+      }
+
+      @media screen and (min-width: $breakpoint-decktop) {
+        display: none;
+      }
+
+      &:hover,
+      &:focus {
+        cursor: pointer;
+        transition-property: box-shadow transform;
+        transition-duration: 0.3s;
+        transition-delay: 0s;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transform: scale(1.03);
+        box-shadow: 0 0 5px 3px rgb(243 132 140 / 42%);
+      }
+    }
+  }
 }
 
 .flex-container {
@@ -162,4 +224,8 @@
     display: flex;
     flex-wrap: nowrap;
   }
+}
+
+.is-hidden {
+  display: none;
 }
