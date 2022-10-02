@@ -40,6 +40,9 @@
     @media screen and (min-width: $breakpoint-tablet) {
       max-width: 337px;
     }
+    @media screen and (min-width: $breakpoint-decktop) {
+      max-width: 608px;
+    }
   }
 
   &__text {
@@ -50,7 +53,7 @@
     line-height: 1.25;
 
     margin: 0 auto;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 
     @media screen and (min-width: $breakpoint-decktop) {
       font-size: $font-sz-18;
@@ -72,10 +75,34 @@
     }
 
     @media screen and (min-width: $breakpoint-tablet) {
-      margin-bottom: 28px;
+      margin-bottom: 25px;
     }
 
     @media screen and (min-width: $breakpoint-decktop) {
+      font-size: $font-sz-18;
+      line-height: 1.22;
+    }
+  }
+
+  &__text--more {
+    font-family: 'Montserrat';
+    color: $main-color;
+    font-size: $font-sz-16;
+    font-weight: 400;
+    line-height: 1.25;
+
+    margin: 0 auto;
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      display: none;
+    }
+
+    @media screen and (min-width: $breakpoint-decktop) {
+      display: block;
       font-size: $font-sz-18;
       line-height: 1.22;
     }
@@ -95,6 +122,11 @@
       font-size: $font-sz-18;
       line-height: 1.22;
     }
+
+    @media screen and (min-width: $breakpoint-decktop) {
+      display: none;
+    }
+
     &:hover,
     &:focus {
       color: $accent-pink-color;
@@ -112,9 +144,11 @@
     }
   }
 
-  // &__image {
-  //   // max-height: 285px;
-  // }
+  &__image {
+    @media screen and (max-width: 767px) {
+      min-width: 100%;
+    }
+  }
 }
 
 .flex-container {
