@@ -4,32 +4,31 @@
       <picture>
         <source
           srcset="
-            ./images/header/desktop-logo@1x.png 1x,
-            ./images/header/desktop-logo@2x.png 2x
+            ./images/images-about/man-baker-desktop.png    1x,
+            ./images/images-about/man-baker-desktop@2x.png 2x
           "
-          media="(min-width: 1200px)"
+          media="(min-width: 1280px)"
         />
         <source
           srcset="
-            ./images/header/mobile-logo@1x.png 1x,
-            ./images/header/mobile-logo@2x.png 2x
+            ./images/images-about/man-baker-tablet.png    1x,
+            ./images/images-about/man-baker-tablet@2x.png 2x
           "
-          media="(max-width: 1199px)"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./images/images-about/man-baker-mobile.png    1x,
+            ./images/images-about/man-baker-mobile@2x.png 2x
+          "
+          media="(max-width: 767px)"
         />
         <img
-          src="./images/header/mobile-logo@2x.png"
-          alt="Logo"
-          width="108"
-          height="50"
+          class="about-us__image"
+          src="./images/images-about/man-baker-mobile.png"
+          alt="Процес приготування пончиків"
         />
       </picture>
-
-      <!-- <img
-        class="about-us__image"
-        src="./images/images-about/man-baker-mobile.png"
-        sizes="(max-width:767px) 100vw, (min-width:768px) 50vw"
-        alt="Процес приготування пончиків"
-      /> -->
     </div>
     <div class="about-us__text-wrapper">
       <h2 class="about-us__title">About us</h2>
@@ -42,6 +41,11 @@
         years, she has created hundreds of cakes for weddings and has baked for
         many celebrities. Eva and our shop have received multiple awards &
         recognition for excellence.
+      </p>
+      <p class="about-us__text--more">
+        We are going to teach you how to cook with passion and sparkles in your
+        eyes! We love what we do and believe you will enjoy our cooking
+        atmosphere!
       </p>
       <a
         class="about-us__link"
