@@ -116,6 +116,16 @@
   &:nth-child(even) {
     border: 1px solid #f3848c;
   }
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    transition-property: box-shadow transform;
+    transition-duration: 0.3s;
+    transition-delay: 0s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transform: scale(1.03);
+    box-shadow: 0 0 5px 3px rgb(243 132 140 / 42%);
+  }
   background-size: 200px 145px;
   background-position: center bottom 102px;
   background-repeat: no-repeat;
