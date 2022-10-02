@@ -1,9 +1,10 @@
-<section class="registration">
+<section class="registration" id="registration">
   <div class="container">
     <h2 class="registration__title">Registration</h2>
     <div class="registration-container">
       <time class="registration-container__data" datetime="2022-05-23"
-        >May 23, 11:00 New York</time
+        >May 23, 11:00 <br />
+        New York</time
       >
 
       <form class="registration-form">
@@ -14,16 +15,23 @@
         <label for="name"></label>
         <input
           class="registration-form__input"
-          type="name"
-          name="mail"
+          type="text"
+          name="name"
           placeholder="Your name"
+          required
+          minlength="2"
+          pattern="[a-zA-Z]+"
+          title="Use only letters. Minimum 2 characters"
         />
-        <label for="mail"></label>
+        <label for="phone"></label>
         <input
           class="registration-form__input"
-          type="phone"
+          type="tel"
           name="phone"
           placeholder="Phone number"
+          required
+          pattern="[0-9]{9}"
+          title="Use 9 numbers"
         />
         <label for="mail"></label>
         <input
@@ -31,6 +39,9 @@
           type="email"
           name="mail"
           placeholder="Email"
+          required
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+          title="Use @ Use .com"
         />
       </form>
       <button class="button registration-form__button" type="submit">
