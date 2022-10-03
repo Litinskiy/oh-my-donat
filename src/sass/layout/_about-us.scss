@@ -1,4 +1,31 @@
 .about-us {
+  position: relative;
+
+  &::before {
+    @media screen and (max-width: 767px) {
+      content: '';
+      width: 17px;
+      height: 40px;
+      background-image: url('../images/images-about/ellipse/ellipse-content-left-part-mobile.svg');
+      position: absolute;
+      top: 1483px;
+      left: 0;
+    }
+  }
+
+  &::after {
+    @media screen and (max-width: 767px) {
+      content: '';
+      width: 22px;
+      height: 50px;
+      background-image: url('../images/images-about/ellipse/ellipse-list-part-mobile.svg');
+      position: absolute;
+      top: 990px;
+      left: 0;
+      z-index: -1;
+    }
+  }
+
   @media screen and (max-width: 767px) {
     padding-top: 20px;
     padding-bottom: 28px;
@@ -18,6 +45,7 @@
     font-family: 'Montserrat Alternates';
     color: $main-color;
     font-weight: $font-w-500;
+    position: relative;
 
     @media screen and (max-width: 767px) {
       font-size: 24px;
@@ -27,12 +55,37 @@
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 8px;
+      display: block;
+      max-width: 280px;
     }
 
     @media screen and (min-width: $breakpoint-tablet) {
       font-size: 32px;
       line-height: 1.21;
       margin-bottom: 28px;
+    }
+
+    &::after {
+      content: '';
+      width: 80px;
+      height: 80px;
+      background-image: url('../images/images-about/ellipse/ellipse-about.svg');
+      position: absolute;
+      top: 11px;
+      left: 194px;
+
+      @media screen and (min-width: $breakpoint-tablet) {
+        top: 62px;
+        left: 85px;
+      }
+
+      @media screen and (min-width: $breakpoint-decktop) {
+        width: 100px;
+        height: 100px;
+        top: 46px;
+        left: 130px;
+        background-size: contain;
+      }
     }
   }
 
@@ -85,51 +138,18 @@
   }
 
   &__text--more {
-    font-family: 'Montserrat';
-    color: $main-color;
-    font-size: $font-sz-16;
-    font-weight: 400;
-    line-height: 1.25;
-
-    margin: 0 auto;
-
-    @media screen and (max-width: 767px) {
-      display: none;
-    }
-
-    @media screen and (min-width: $breakpoint-tablet) {
-      display: none;
-    }
-
     @media screen and (min-width: $breakpoint-decktop) {
       display: block;
-      font-size: $font-sz-18;
-      line-height: 1.22;
-    }
-  }
-
-  &__link {
-    font-family: 'Montserrat';
-    color: $main-color;
-    font-weight: $font-w-500;
-
-    @media screen and (max-width: 767px) {
-      font-size: $font-sz-16;
-      line-height: 1.25;
-    }
-
-    @media screen and (min-width: $breakpoint-tablet) {
+      width: 392px;
+      font-weight: 400;
       font-size: $font-sz-18;
       line-height: 1.22;
     }
 
-    @media screen and (min-width: $breakpoint-decktop) {
-      display: none;
-    }
-
-    &:hover,
-    &:focus {
-      color: $accent-pink-color;
+    &.is-hidden {
+      @media screen and (min-width: $breakpoint-decktop) {
+        display: inline;
+      }
     }
   }
 
@@ -149,6 +169,57 @@
       min-width: 100%;
     }
   }
+
+  &__button {
+    font-family: 'Montserrat';
+    color: $main-color;
+    font-weight: $font-w-500;
+    background-color: inherit;
+    border: none;
+    padding: 0;
+
+    @media screen and (max-width: 767px) {
+      font-size: $font-sz-16;
+      line-height: 1.25;
+
+      display: inline-block;
+    }
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      font-size: $font-sz-18;
+      line-height: 1.22;
+    }
+
+    @media screen and (min-width: $breakpoint-decktop) {
+      display: none;
+    }
+
+    &--close {
+      font-family: 'Montserrat';
+      color: $main-color;
+      font-weight: $font-w-500;
+      background-color: inherit;
+      margin-top: 15px;
+      border: none;
+      padding: 0;
+
+      @media screen and (max-width: 767px) {
+        font-size: $font-sz-16;
+        line-height: 1.25;
+
+        display: inline-block;
+      }
+
+      @media screen and (min-width: $breakpoint-tablet) {
+        font-size: $font-sz-18;
+        line-height: 1.22;
+      }
+
+      @media screen and (min-width: $breakpoint-decktop) {
+        display: none;
+      }
+    }
+  }
 }
 
 .flex-container {
@@ -162,4 +233,8 @@
     display: flex;
     flex-wrap: nowrap;
   }
+}
+
+.is-hidden {
+  display: none;
 }
