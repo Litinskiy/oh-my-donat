@@ -65,6 +65,12 @@
       rgba(61, 44, 44, 0.6)
     ),
     url('../images/registration-img/topping-on-strawberry-mob1x.png');
+    background-image: linear-gradient(
+      to right,
+      rgba(61, 44, 44, 0.6),
+      rgba(61, 44, 44, 0.6)
+    ),
+    url('../images/registration-img/webp/topping-on-strawberry-mob1x.webp');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -78,6 +84,12 @@
         rgba(61, 44, 44, 0.6)
       ),
       url('../images/registration-img/topping-on-strawberry-mob@2x.png');
+      background-image: linear-gradient(
+        to right,
+        rgba(61, 44, 44, 0.6),
+        rgba(61, 44, 44, 0.6)
+      ),
+      url('../images/registration-img/webp/topping-on-strawberry-mob@2x.webp');
   }
 
   @media screen and (min-width: 768px) {
@@ -91,6 +103,9 @@
     background-image: url('../images/registration-img/Rectangle-tab1x.png'),
       linear-gradient(rgba(61, 44, 44, 0.3), rgba(61, 44, 44, 0.3)),
       url('../images/registration-img/topping-on-strawberry-tab1x.png');
+    background-image: url('../images/registration-img/webp/Rectangle-tab1x.webp'),
+      linear-gradient(rgba(61, 44, 44, 0.3), rgba(61, 44, 44, 0.3)),
+      url('../images/registration-img/webp/topping-on-strawberry-tab1x.webp');
     background-position: left, right, right;
     // background-repeat: no-repeat;
     background-size: 563px, 453px, 453px;
@@ -101,6 +116,9 @@
       background-image: url('../images/registration-img/Rectangle-tab@2x.png'),
         linear-gradient(rgba(61, 44, 44, 0.3), rgba(61, 44, 44, 0.3)),
         url('../images/registration-img/topping-on-strawberry-tab2x.png');
+      background-image: url('../images/registration-img/webp/Rectangle-tab@2x.webp'),
+        linear-gradient(rgba(61, 44, 44, 0.3), rgba(61, 44, 44, 0.3)),
+        url('../images/registration-img/webp/topping-on-strawberry-tab2x.webp');
     }
 
     &::after {
@@ -112,11 +130,13 @@
       bottom: 20px;
       left: 23px;
       background-image: url('../images/registration-img/colorful-and-tasty-tab1x.png');
+      background-image: url('../images/registration-img/webp/colorful-and-tasty-tab1x.webp');
 
       @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
         background-image: url('../images/registration-img/colorful-and-tasty-tab@2x.png');
+        background-image: url('../images/registration-img/webp/colorful-and-tasty-tab@2x.webp');
         background-size: cover;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       }
@@ -133,6 +153,9 @@
     background-image: url('../images/registration-img/Rectangle-desk1x.png'),
       linear-gradient(rgba(61, 44, 44, 0.3), rgba(61, 44, 44, 0.3)),
       url('/src/images/registration-img/topping-on-strawberry-desk1x.png');
+    background-image: url('../images/registration-img/webp/Rectangle-desk1x.webp'),
+      linear-gradient(rgba(61, 44, 44, 0.3), rgba(61, 44, 44, 0.3)),
+      url('/src/images/registration-img/webp/topping-on-strawberry-desk1x.webp');
     background-position: left, right, right;
     background-repeat: no-repeat;
     background-size: 972px, 453px, 453px;
@@ -142,7 +165,10 @@
       (min-resolution: 2dppx) {
       background-image: url('../images/registration-img/Rectangle-desk@2x.png'),
         linear-gradient(rgba(61, 44, 44, 0.3), rgba(61, 44, 44, 0.3)),
-        url('../images/registration-img/topping-on-strawberry-desk@2x.png');
+        url('../images/registration-img/topping-on-strawberry-desk2x.png');
+      background-image: url('../images/registration-img/webp/Rectangle-desk@2x.webp'),
+        linear-gradient(rgba(61, 44, 44, 0.3), rgba(61, 44, 44, 0.3)),
+        url('../images/registration-img/webp/topping-on-strawberry-desk2x.webp');
 
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
@@ -156,11 +182,13 @@
       bottom: 16px;
       left: 15px;
       background-image: url('../images/registration-img/colorful-and-tasty-desk1x.png');
+      background-image: url('../images/registration-img/webp/colorful-and-tasty-desk1x.webp');
 
       @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
         background-image: url('../images/registration-img/colorful-and-tasty-desk@2x.png');
+        background-image: url('../images/registration-img/webp/colorful-and-tasty-desk@2x.webp');
         background-size: cover;
       }
     }
