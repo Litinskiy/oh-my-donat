@@ -175,6 +175,8 @@
     color: $main-color;
     font-weight: $font-w-500;
     background-color: inherit;
+    border: none;
+    padding: 0;
 
     @media screen and (max-width: 767px) {
       font-size: $font-sz-16;
@@ -198,6 +200,8 @@
       font-weight: $font-w-500;
       background-color: inherit;
       margin-top: 15px;
+      border: none;
+      padding: 0;
 
       @media screen and (max-width: 767px) {
         font-size: $font-sz-16;
