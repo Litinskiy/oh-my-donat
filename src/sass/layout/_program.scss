@@ -298,13 +298,15 @@
     color: $main-color;
     font-weight: $font-w-500;
     background-color: inherit;
+    border: none;
+    padding: 0;
 
     @media screen and (max-width: 767px) {
       font-size: $font-sz-16;
       line-height: 1.25;
 
       display: inline-block;
-      padding-bottom: 24px;
+      margin-bottom: 24px;
     }
 
     @media screen and (min-width: $breakpoint-tablet) {
@@ -316,30 +318,21 @@
       display: none;
     }
 
-    // &:hover,
-    // &:focus {
-    //   cursor: pointer;
-    //   transition-property: box-shadow transform;
-    //   transition-duration: 0.3s;
-    //   transition-delay: 0s;
-    //   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    //   transform: scale(1.03);
-    //   box-shadow: 0 0 5px 3px rgb(243 132 140 / 42%);
-    // }
-
     &--close {
       font-family: 'Montserrat';
       color: $main-color;
       font-weight: $font-w-500;
       background-color: inherit;
       margin-top: 15px;
+      border: none;
+      padding: 0;
 
       @media screen and (max-width: 767px) {
         font-size: $font-sz-16;
         line-height: 1.25;
 
         display: inline-block;
-        padding-bottom: 24px;
+        margin-bottom: 24px;
       }
 
       @media screen and (min-width: $breakpoint-tablet) {
@@ -356,12 +349,12 @@
   &__examples-container {
     display: flex;
     flex-wrap: wrap;
-    width: 284px;
+    width: 280px;
     margin: 0 auto;
 
     @media screen and (min-width: $breakpoint-tablet) {
       margin-top: 19px;
-      min-width: 350px;
+      min-width: 340px;
       align-content: flex-start;
     }
 
@@ -579,17 +572,6 @@
       position: relative;
 
       &::before {
-        @media screen and (max-width: 767px) {
-          content: '';
-          width: 22px;
-          height: 50px;
-          background-image: url('../images/images-about/ellipse/ellipse-list-part-mobile.svg');
-          position: absolute;
-          top: -377px;
-          left: -174px;
-          z-index: -1;
-        }
-
         @media screen and (min-width: $breakpoint-tablet) {
           content: '';
           width: 32px;
@@ -607,16 +589,6 @@
       }
 
       &::after {
-        @media screen and (max-width: 767px) {
-          content: '';
-          width: 17px;
-          height: 40px;
-          background-image: url('../images/images-about/ellipse/ellipse-content-left-part-mobile.svg');
-          position: absolute;
-          top: 73%;
-          left: -131%;
-        }
-
         @media screen and (min-width: $breakpoint-tablet) {
           content: '';
           width: 50px;
@@ -639,8 +611,8 @@
   }
 
   &__img {
-    width: 130px;
-    height: 130px;
+    width: 128px;
+    height: 128px;
     position: relative;
 
     filter: drop-shadow(10px 15px 25px rgba(210, 201, 201, 0.45));
