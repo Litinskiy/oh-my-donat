@@ -3,7 +3,6 @@
   padding-bottom: 20px;
   padding-top: 20px;
 
-
   @media screen and (max-width: 767px) {
     &:after {
       display: block;
@@ -99,11 +98,9 @@
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url("../images/registration-img/Rectangle-tab@2x.png"),
+      background-image: url('../images/registration-img/Rectangle-tab@2x.png'),
         url('../images/registration-img/topping-on-strawberry-tab2x.png');
     }
-
-    
 
     &::after {
       display: block;
@@ -114,6 +111,13 @@
       bottom: 20px;
       left: 23px;
       background-image: url('../images/registration-img/colorful-and-tasty-tab1x.png');
+      
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url("../images/registration-img/colorful-and-tasty-tab@2x.png");
+        background-size: cover;
+        }
     }
   }
 
@@ -146,11 +150,17 @@
       bottom: 16px;
       left: 15px;
       background-image: url('../images/registration-img/colorful-and-tasty-desk1x.png');
+      
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url("../images/registration-img/colorful-and-tasty-desk@2x.png");
+      background-size: cover;  
+      }
     }
   }
 
   @media screen and (min-width: 1280px) {
-    
     &::before {
       display: block;
       content: '';
@@ -178,13 +188,28 @@
   @media screen and (min-width: 1280px) {
     margin-bottom: 28px;
   }
+
+  @media screen and (min-width: 1280px) {
+    &::before {
+      display: block;
+      content: '';
+
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      top: 160px;
+      right: 33px;
+      z-index: -1;
+
+      background-image: url('../images/registration-img/decor-desk-100hf.svg');
+    }
+  }
 }
 
 .registration-container__data {
   position: relative;
   display: block;
   margin-bottom: 40px;
-  // padding-bottom: 20px;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
@@ -215,7 +240,7 @@
     color: #000000;
     text-align: left;
     margin-bottom: 16px;
-    width: 200px;
+    width: 202px;
   }
   @media screen and (min-width: 1280px) {
     margin-bottom: 24px;
@@ -247,11 +272,10 @@
   color: $white-color;
 
   @media screen and (min-width: 768px) {
-
     padding-top: 40px;
 
     position: relative;
-    max-width: 237px;
+    width: 237px;
     margin-left: 56px;
     margin-right: 74px;
 
@@ -268,10 +292,10 @@
     }
   }
 
-     @media screen and (min-width: 1280px) {
-      max-width: 265px;
-      margin-right: 0px;
-}
+  @media screen and (min-width: 1280px) {
+    max-width: 267px;
+    margin-right: 0px;
+  }
 }
 
 .registration-form__input {
@@ -288,21 +312,21 @@
   background-color: transparent;
 
   @media screen and (min-width: 768px) {
-width: 237px;
+    width: 237px;
     margin-bottom: 16px;
     line-height: 1.25;
     color: $title-color;
-    border-bottom: 1px solid $title-color ;
+    border-bottom: 1px solid $title-color;
   }
   @media screen and (min-width: 1280px) {
     width: 212px;
     margin-bottom: 14px;
-    border-bottom: 1px solid $title-color ;
+    border-bottom: 1px solid $title-color;
   }
 }
 
 .registration-form__input:last-child {
-  margin-bottom: 34px;
+  margin-bottom: 32px;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 52px;
@@ -314,29 +338,8 @@ width: 237px;
 
 .registration-form__button {
   display: block;
-  @media screen and (min-width: 768px) {
-    height: 40px;
-    // margin-bottom: 45px;
-    // margin-top: auto;
-    // margin-bottom: auto;
-  }
-
-  @media screen and (min-width: 1280px) {
-    &::before {
-      display: block;
-      content: '';
-
-      position: absolute;
-      width: 100px;
-      height: 100px;
-      top: 80px;
-      right: -103px;
-      z-index: -1;
-
-      background-image: url('../images/registration-img/decor-desk-100hf.svg');
-      background-repeat: no-repeat;
-    }
-  }
+  height: 40px;
+  margin: 0 auto;
 }
 
 .registration-form__input:invalid {
@@ -352,6 +355,5 @@ width: 237px;
 
   @media screen and (min-width: 768px) {
     border-bottom: 1px solid $title-color;
-      }
-
+  }
 }
