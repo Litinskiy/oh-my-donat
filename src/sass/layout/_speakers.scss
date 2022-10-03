@@ -111,6 +111,7 @@
   &::before {
     display: block;
     content: '';
+    color: not-inherit;
 
     width: 27px;
     height: 40px;
@@ -181,19 +182,19 @@
       background-image: url('../images/speakers-images/svg/dt_half-right.svg');
     }
     &::after {
-      display: none;
+      display: block;
       content: '';
 
-      width: 23px;
+      width: 8px;
       height: 40px;
 
       position: absolute;
 
-      top: 79px;
+      top: 110px;
       left: 0px;
       background-repeat: no-repeat;
 
-      background-image: url('../images/speakers-images/svg/tabl-half-left.svg');
+      background-image: url('../images/speakers-images/svg/dt_left-half.svg');
     }
   }
 }
@@ -273,7 +274,19 @@
   }
   @media screen and (min-width: $breakpoint-decktop) {
     &::after {
-      display: none;
+      display: block;
+      content: '';
+
+      width: 32px;
+      height: 32px;
+
+      position: absolute;
+
+      top: -99px;
+      left: -68px;
+      background-repeat: no-repeat;
+
+      background-image: url('../images/speakers-images/svg/dt_left-top.svg');
     }
   }
 }
@@ -329,19 +342,19 @@
   }
   @media screen and (min-width: $breakpoint-decktop) {
     &::after {
-      display: none;
+      display: block;
       content: '';
 
-      width: 16px;
-      height: 16px;
+      width: 80px;
+      height: 80px;
 
       position: absolute;
 
-      bottom: 74px;
-      right: 35px;
+      top: -124px;
+      right: -111px;
       background-repeat: no-repeat;
 
-      background-image: url('../images/speakers-images/svg/mobile_sm.svg');
+      background-image: url('../images/speakers-images/svg/dt_top-left.svg');
     }
     &::before {
       display: none;
@@ -396,6 +409,27 @@
       background-repeat: no-repeat;
 
       background-image: url('../images/speakers-images/svg/tabl_title50.svg');
+    }
+  }
+}
+
+.speakers-list__image--fourth-ring-position {
+  position: relative;
+  @media screen and (min-width: $breakpoint-decktop) {
+    &::after {
+      display: block;
+      content: '';
+
+      width: 32px;
+      height: 32px;
+
+      position: absolute;
+
+      top: -99px;
+      left: -280px;
+      background-repeat: no-repeat;
+
+      background-image: url('../images/speakers-images/svg/dt_left-top.svg');
     }
   }
 }
