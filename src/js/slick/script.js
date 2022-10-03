@@ -1,19 +1,19 @@
 $(document).ready(function () {
   $('.slider').slick({
     arrows: true,
-    dots: false,
+    infinity: true,
     slidesToShow: 3,
-    autoplay: true,
+    slidesToScroll: 1,
+    // autoplay: true,
     centerPadding: '10px',
     centerMode: true,
     speed: 1600,
     autoplaySpeed: 1400,
     responsive: [
       {
-        breakpoint: 1279,
+        breakpoint: 1280,
         settings: {
-          centerMode: true,
-          centerPadding: '10px',
+          slidesToScroll: 1,
           slidesToShow: 3,
         },
       },
@@ -21,8 +21,12 @@ $(document).ready(function () {
         breakpoint: 767,
         settings: {
           slidesToShow: 1,
-          centerPadding: '10px',
-          centerMode: true,
+          slidesToScroll: 1,
+        },
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
         },
       },
     ],
