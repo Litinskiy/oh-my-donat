@@ -126,9 +126,10 @@
     transform: scale(1.03);
     box-shadow: 0 0 5px 3px rgb(243 132 140 / 42%);
   }
+
   background-size: 200px 145px;
-  background-position: center bottom 102px;
   background-repeat: no-repeat;
+  background-position: center bottom 102px;
   background-image: url('../images/price-img/donuts-mob1.png');
 
   @media screen and (min-device-pixel-ratio: 2),
@@ -144,8 +145,8 @@
     max-width: 225px;
     height: 100%;
     align-content: space-between;
+    background-position: center bottom 102px;
     background-image: url('../images/price-img/donuts-table1.png');
-    background-position: center bottom 96px;
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
@@ -159,7 +160,7 @@
     &:not(:last-child) {
       margin-right: 32px;
     }
-
+    background-position: center bottom 102px;
     background-image: url('../images/price-img/donuts-desk1.png');
     background-size: 300px 218px;
     @media screen and (min-device-pixel-ratio: 2),
