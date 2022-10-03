@@ -6,7 +6,41 @@
   }
 }
 
+.container--ellipse-position {
+  position: relative;
+
+  @media screen and (min-width: $breakpoint-tablet) {
+    max-width: 768px;
+  }
+
+  @media screen and (min-width: $breakpoint-decktop) {
+    max-width: 1280px;
+  }
+
+  &::after {
+    @media screen and (min-width: $breakpoint-tablet) {
+      content: '';
+      width: 32px;
+      height: 32px;
+      background-image: url('../images/images-about/ellipse/ellipse-content-middle.svg');
+      position: absolute;
+      top: -12px;
+      right: 198px;
+    }
+
+    @media screen and (min-width: $breakpoint-decktop) {
+      width: 67px;
+      height: 67px;
+      background-size: contain;
+      top: -26px;
+      right: 347px;
+    }
+  }
+}
+
 .program {
+  position: relative;
+
   @media screen and (max-width: 767px) {
     padding-bottom: 17.5px;
   }
@@ -20,6 +54,66 @@
     padding-top: 50px;
     padding-bottom: 50px;
   }
+
+  &::after {
+    content: '';
+    width: 21px;
+    height: 32px;
+    background-image: url('../images/images-about/ellipse/ellipse-read-more-part.svg');
+    position: absolute;
+    top: 442px;
+    right: 0;
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      display: none;
+    }
+  }
+
+  &::before {
+    content: '';
+    width: 27px;
+    height: 50px;
+    background-image: url('../images/images-about/ellipse/ellipse-program-right.svg');
+    position: absolute;
+
+    @media screen and (max-width: 767px) {
+      top: 162px;
+      right: 0;
+    }
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      top: -10px;
+      right: 0;
+    }
+
+    @media screen and (min-width: $breakpoint-decktop) {
+      content: '';
+      width: 64px;
+      height: 100px;
+      background-image: url('../images/images-about/ellipse/ellipse-program-right-part.svg');
+      position: absolute;
+      top: -55px;
+      right: 0;
+      background-size: contain;
+    }
+  }
+
+  // &--ellipse {
+  //   position: relative;
+
+  //   &::before {
+  //     content: '';
+  //     width: 22px;
+  //     height: 50px;
+  //     background-image: url('../images/images-about/ellipse/ellipse-program-left.svg');
+  //     position: absolute;
+
+  //     @media screen and (max-width: 767px) {
+  //       top: 262px;
+  //       left: -2px;
+  //     }
+  //   }
+  // }
 
   &__wrapper {
     @media screen and (min-width: $breakpoint-tablet) {
@@ -40,13 +134,16 @@
     position: relative;
 
     @media screen and (max-width: 767px) {
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto;
       font-weight: $font-w-500;
       font-size: 24px;
       line-height: 1.2;
       margin-bottom: 8px;
+
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      max-width: 280px;
     }
 
     @media screen and (min-width: $breakpoint-tablet) {
@@ -69,7 +166,7 @@
       content: '';
       width: 50px;
       height: 50px;
-      background-image: url('../images/images-about/ellipse/ellipse-program-text.png');
+      background-image: url('../images/images-about/ellipse/ellipse-program-text.svg');
       position: absolute;
       top: -10px;
       left: 175px;
@@ -84,29 +181,6 @@
         height: 100px;
         top: -48px;
         left: 96px;
-        background-size: contain;
-      }
-    }
-
-    &::before {
-      content: '';
-      width: 50px;
-      height: 50px;
-      background-image: url('../images/images-about/ellipse/ellipse-program-right.png');
-      position: absolute;
-      top: 162px;
-      left: 274px;
-
-      @media screen and (min-width: $breakpoint-tablet) {
-        top: -42px;
-        left: 709px;
-      }
-
-      @media screen and (min-width: $breakpoint-decktop) {
-        width: 100px;
-        height: 100px;
-        top: -172px;
-        left: 1198px;
         background-size: contain;
       }
     }
@@ -161,11 +235,12 @@
 
       width: 24px;
       height: 24px;
-      margin-right: 10px;
+      margin-right: 8px;
       background-image: url('../images/hat.svg');
       flex-shrink: 0;
 
       @media screen and (min-width: $breakpoint-decktop) {
+        margin-right: 16px;
         left: -40px;
       }
     }
@@ -199,6 +274,22 @@
     @media screen and (min-width: $breakpoint-decktop) {
       font-size: $font-sz-18;
       line-height: 1.22;
+    }
+  }
+
+  &__text--desktop {
+    @media screen and (min-width: $breakpoint-decktop) {
+      display: block;
+      width: 392px;
+      font-weight: 400;
+      font-size: $font-sz-18;
+      line-height: 1.22;
+    }
+
+    &.is-hidden {
+      @media screen and (min-width: $breakpoint-decktop) {
+        display: block;
+      }
     }
   }
 
@@ -259,17 +350,6 @@
       @media screen and (min-width: $breakpoint-decktop) {
         display: none;
       }
-
-      // &:hover,
-      // &:focus {
-      //   cursor: pointer;
-      //   transition-property: box-shadow transform;
-      //   transition-duration: 0.3s;
-      //   transition-delay: 0s;
-      //   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-      //   transform: scale(1.03);
-      //   box-shadow: 0 0 5px 3px rgb(243 132 140 / 42%);
-      // }
     }
   }
 
@@ -286,52 +366,84 @@
     }
 
     @media screen and (min-width: $breakpoint-decktop) {
-      min-width: 714px;
+      min-width: 716px;
     }
   }
 
   &__examples-bg {
+    border-radius: 50%;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     &:nth-child(2) {
-      padding-top: 28px;
+      margin-top: 28px;
       margin-left: 20px;
     }
 
     &:nth-child(4) {
-      padding-top: 28px;
+      margin-top: 28px;
       margin-left: 20px;
     }
 
+    &:nth-child(odd) {
+      margin-bottom: 28px;
+    }
+
     @media screen and (min-width: $breakpoint-tablet) {
+      &:nth-child(odd) {
+        margin-bottom: 40px;
+      }
+
       &:nth-child(2) {
-        padding-top: 0;
+        margin-top: 0;
         margin-left: 32px;
+        margin-bottom: 40px;
       }
 
       &:nth-child(3) {
-        padding-top: 40px;
-        // margin-top: -9px;
+        margin-bottom: 79px;
       }
       &:nth-child(4) {
         margin-left: 32px;
-        padding-top: 79px;
+        margin-top: 39px;
+        margin-bottom: 40px;
       }
     }
 
     @media screen and (min-width: $breakpoint-decktop) {
+      &:nth-child(1) {
+        margin-bottom: 36px;
+      }
+
       &:nth-child(2) {
-        padding-top: 36px;
+        margin-top: 36px;
+        margin-bottom: 0;
         margin-left: 128px;
       }
 
       &:nth-child(3) {
         margin-top: 0;
         padding-top: 0;
+        margin-bottom: 36px;
       }
 
       &:nth-child(4) {
-        padding-top: 36px;
+        margin-top: 36px;
+        margin-bottom: 0;
         margin-left: 128px;
       }
+    }
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      // transition-property: box-shadow transform;
+      // transition-duration: 0.3s;
+      // transition-delay: 0s;
+      // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+      transform: scale(1.03);
+      box-shadow: 0 0 5px 3px rgb(243 132 140 / 42%);
     }
 
     &--position {
@@ -359,12 +471,178 @@
         );
       }
     }
+
+    &--ecllipse {
+      position: relative;
+
+      &::after {
+        @media screen and (min-width: $breakpoint-tablet) {
+          content: '';
+          width: 20px;
+          height: 20px;
+          background-image: url('../images/images-about/ellipse/ellipse-program-3circle-mini.svg');
+          position: absolute;
+          top: 20px;
+          right: 175px;
+        }
+
+        @media screen and (min-width: $breakpoint-decktop) {
+          width: 20px;
+          height: 20px;
+          top: -11px;
+          right: 364px;
+        }
+      }
+
+      &::before {
+        @media screen and (min-width: $breakpoint-tablet) {
+          content: '';
+          width: 50px;
+          height: 50px;
+          background-image: url('../images/images-about/ellipse/ellipse-Eva.svg');
+          position: absolute;
+          top: 132px;
+          right: 218px;
+        }
+
+        @media screen and (min-width: $breakpoint-decktop) {
+          width: 100px;
+          height: 100px;
+          background-size: contain;
+          top: 140px;
+          right: 402px;
+        }
+      }
+    }
+
+    &--ecllipse-firts {
+      position: relative;
+
+      &::after {
+        @media screen and (max-width: 767px) {
+          content: '';
+          width: 20px;
+          height: 20px;
+          background-image: url('../images/images-about/ellipse/ellipse-Eva-mobile-mini.svg');
+          position: absolute;
+          top: -138px;
+          right: -113px;
+        }
+
+        @media screen and (min-width: $breakpoint-tablet) {
+          content: '';
+          width: 16px;
+          height: 16px;
+          background-image: url('../images/images-about/ellipse/ellipse-read-more-bottom.svg');
+          position: absolute;
+          top: 447px;
+          right: 449px;
+        }
+
+        @media screen and (min-width: $breakpoint-decktop) {
+          width: 32px;
+          height: 32px;
+          background-size: contain;
+          top: 640px;
+          right: 747px;
+        }
+      }
+
+      &::before {
+        content: '';
+        width: 40px;
+        height: 40px;
+        background-image: url('../images/images-about/ellipse/ellipse-content-first-part.svg');
+        position: absolute;
+        top: 120px;
+        right: -47px;
+
+        @media screen and (min-width: $breakpoint-tablet) {
+          width: 40px;
+          height: 40px;
+
+          top: 83px;
+          right: 125px;
+        }
+
+        @media screen and (min-width: $breakpoint-decktop) {
+          width: 80px;
+          height: 80px;
+          background-size: contain;
+          top: 165px;
+          right: 242px;
+        }
+      }
+    }
+
+    &--ecllipse-last {
+      position: relative;
+
+      &::before {
+        @media screen and (max-width: 767px) {
+          content: '';
+          width: 22px;
+          height: 50px;
+          background-image: url('../images/images-about/ellipse/ellipse-list-part-mobile.svg');
+          position: absolute;
+          top: -377px;
+          left: -174px;
+          z-index: -1;
+        }
+
+        @media screen and (min-width: $breakpoint-tablet) {
+          content: '';
+          width: 32px;
+          height: 32px;
+          background-image: url('../images/images-about/ellipse/ellipse-content-middle-grey.svg');
+          position: absolute;
+          top: 232px;
+          right: 167px;
+        }
+
+        @media screen and (min-width: $breakpoint-decktop) {
+          top: 311px;
+          right: 360px;
+        }
+      }
+
+      &::after {
+        @media screen and (max-width: 767px) {
+          content: '';
+          width: 17px;
+          height: 40px;
+          background-image: url('../images/images-about/ellipse/ellipse-content-left-part-mobile.svg');
+          position: absolute;
+          top: 73%;
+          left: -131%;
+        }
+
+        @media screen and (min-width: $breakpoint-tablet) {
+          content: '';
+          width: 50px;
+          height: 50px;
+          background-image: url('../images/images-about/ellipse/ellipse-content-middle-pink.svg');
+          position: absolute;
+          top: -13px;
+          right: 125px;
+        }
+
+        @media screen and (min-width: $breakpoint-decktop) {
+          width: 100px;
+          height: 100px;
+          background-size: contain;
+          top: -51px;
+          right: 261px;
+        }
+      }
+    }
   }
 
   &__img {
     width: 130px;
     height: 130px;
     position: relative;
+
     filter: drop-shadow(10px 15px 25px rgba(210, 201, 201, 0.45));
 
     @media screen and (min-width: $breakpoint-tablet) {
@@ -443,15 +721,6 @@
       font-weight: 400;
       font-size: $font-sz-16;
       line-height: 1.25;
-    }
-  }
-  &__text--desktop {
-    @media screen and (min-width: $breakpoint-decktop) {
-      display: block;
-      width: 392px;
-      font-weight: 400;
-      font-size: $font-sz-18;
-      line-height: 1.22;
     }
   }
 }

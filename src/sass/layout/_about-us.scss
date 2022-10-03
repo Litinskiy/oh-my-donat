@@ -28,6 +28,8 @@
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 8px;
+      display: block;
+      max-width: 280px;
     }
 
     @media screen and (min-width: $breakpoint-tablet) {
@@ -40,7 +42,7 @@
       content: '';
       width: 80px;
       height: 80px;
-      background-image: url('../images/images-about/ellipse/ellipse-about.png');
+      background-image: url('../images/images-about/ellipse/ellipse-about.svg');
       position: absolute;
       top: 11px;
       left: 194px;
