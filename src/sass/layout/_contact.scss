@@ -1,7 +1,7 @@
 .contact {
   position: relative;
   padding-top: 20px;
-  padding-bottom: 28px;
+  padding-bottom: 14px;
 
   @media screen and (min-width: 768px) {
     padding-top: 34px;
@@ -168,6 +168,7 @@
   font-size: 16px;
   line-height: 1.25;
   padding-bottom: 2px;
+  border: none;
   border-bottom: 1px solid #000000;
   color: rgba(0, 0, 0, 0.5);
   background-color: transparent;

@@ -1,7 +1,7 @@
 .footer {
   position: relative;
   width: 100%;
-  padding-top: 56px;
+  padding-top: 14px;
   padding-bottom: 50px;
   margin: 0 auto;
 
@@ -19,21 +19,22 @@
     }
   }
     @media screen and (min-width: 768px) {
-      padding-top: 96px;
+      padding-top: 0px;
       padding-bottom: 80px;
     }
     @media screen and (min-width: 1280px) {
-      padding-top: 116px;
       padding-bottom: 100px;
     }
   }
 
 
 .socials {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  // top: 0;
+  // left: 50%;
+  // transform: translateX(-50%);
 
   @media screen and (max-width: 767px) {
     &:after {
@@ -51,6 +52,7 @@
     }
   }
   @media screen and (min-width: 768px) and (max-width: 1279px) {
+    margin-bottom: 100px;
     &:after {
       display: block;
       content: '';
@@ -78,7 +80,9 @@
              background-image: url('../images/registration-img/decor-tab-20.svg');
          }
   }
+
   @media screen and (min-width: 1280px) {
+    margin-bottom: 100px;
 &:after {
         display: block;
         content: '';

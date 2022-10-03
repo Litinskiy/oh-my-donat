@@ -82,7 +82,13 @@
   }
 
   @media screen and (min-width: 768px) {
-    padding: 40 40px 0 62px;
+    max-width: 704px;
+    height: 246px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 40px 0 62px;
 
     background-image: url('../images/registration-img/Rectangle-tab1x.png'),
       url('../images/registration-img/topping-on-strawberry-tab1x.png');
@@ -97,10 +103,7 @@
         url('../images/registration-img/topping-on-strawberry-tab2x.png');
     }
 
-    max-width: 704px;
-    height: 246px;
-    display: flex;
-    align-items: center;
+    
 
     &::after {
       display: block;
@@ -132,7 +135,7 @@
     height: 246px;
     display: flex;
     align-items: center;
-    padding: 40px 232px 0 213px;
+    padding: 0 232px 0 213px;
 
     &::after {
       display: block;
@@ -147,6 +150,7 @@
   }
 
   @media screen and (min-width: 1280px) {
+    
     &::before {
       display: block;
       content: '';
@@ -191,18 +195,18 @@
     color: #000000;
     max-width: 90px;
     text-align: right;
-    margin-bottom: 30;
+    margin-bottom: 0;
   }
   @media screen and (min-width: 1280px) {
     color: #000000;
     min-width: 127px;
     text-align: right;
-    margin-bottom: 40;
+    margin-bottom: 0;
   }
 }
 
 .registration-container__text {
-    height: 48px;
+  height: 48px;
   margin-bottom: 20px;
   line-height: 1.25;
   color: $white-color;
@@ -213,8 +217,11 @@
     margin-bottom: 16px;
     width: 200px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1280px) {
     margin-bottom: 24px;
+    width: 252px;
+    font-size: 20px;
+    line-height: 1.2;
   }
 }
 
@@ -240,6 +247,9 @@
   color: $white-color;
 
   @media screen and (min-width: 768px) {
+
+    padding-top: 40px;
+
     position: relative;
     max-width: 237px;
     margin-left: 56px;
@@ -253,10 +263,15 @@
       content: '';
       display: inline-block;
       left: -104px;
-      top: 40%;
+      top: 50%;
       border: 1px solid rgba(0, 0, 0, 0.5);
     }
   }
+
+     @media screen and (min-width: 1280px) {
+      max-width: 265px;
+      margin-right: 0px;
+}
 }
 
 .registration-form__input {
@@ -266,19 +281,23 @@
   padding-bottom: 2px;
   font-size: 16px;
   line-height: 1.25;
+  border: none;
   border-bottom: 1px solid #ffffff;
   color: $white-color;
   outline: none;
   background-color: transparent;
 
   @media screen and (min-width: 768px) {
+width: 237px;
     margin-bottom: 16px;
     line-height: 1.25;
     color: $title-color;
     border-bottom: 1px solid $title-color ;
   }
   @media screen and (min-width: 1280px) {
+    width: 212px;
     margin-bottom: 14px;
+    border-bottom: 1px solid $title-color ;
   }
 }
 
@@ -294,9 +313,10 @@
 }
 
 .registration-form__button {
+  display: block;
   @media screen and (min-width: 768px) {
     height: 40px;
-    margin-bottom: 45px;
+    // margin-bottom: 45px;
     // margin-top: auto;
     // margin-bottom: auto;
   }
@@ -331,7 +351,7 @@
   border-bottom: 1px solid $white-color;
 
   @media screen and (min-width: 768px) {
-    border-bottom: $title-color;
+    border-bottom: 1px solid $title-color;
       }
 
 }
