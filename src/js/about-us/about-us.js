@@ -1,7 +1,7 @@
 (() => {
-  const btnOpen = document.querySelector('[open-button]');
-  const text = document.querySelector('[text]');
-  const btnClose = document.querySelector('[close-button]');
+  const btnOpen = document.querySelector('[open-button-about]');
+  const text = document.querySelector('[text-about]');
+  const btnClose = document.querySelector('[close-button-about]');
   btnOpen.addEventListener('click', () => {
     text.classList.toggle('is-hidden');
     btnOpen.classList.add('is-hidden');
