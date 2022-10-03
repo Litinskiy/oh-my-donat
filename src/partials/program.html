@@ -1,5 +1,5 @@
-<section class="program">
-  <div class="container flex-container">
+<section class="program" id="program">
+  <div class="container flex-container container--ellipse-position">
     <div class="program__wrapper">
       <h2 class="program__title">Program</h2>
       <p class="program__text">
@@ -35,26 +35,53 @@
           </p>
         </li>
       </ul>
-      <p class="program__text--desktop is-hidden" data-menu>
+      <p class="program__text--desktop is-hidden" data-text>
         Come with your dear people and friends and you will spend an
         unforgettable time and will become a real professional in donuts
         cooking!
       </p>
-      <button class="program__button" type="button" data-menu-button>
+      <button class="program__button" type="button" data-open-button>
         Read more
       </button>
-      <button class="program__button--close" type="button" data-menu-close>
+      <button
+        class="program__button--close is-hidden"
+        type="button"
+        data-close-button
+      >
         Less
       </button>
     </div>
     <ul class="program__examples-container">
-      <li class="program__examples-bg">
+      <li class="program__examples-bg program__examples-bg--ecllipse-firts">
         <div class="program__examples-bg--position">
-          <img
-            class="program__img"
-            src="./images/images-about/example-1-mobile.png"
-            alt="Процес прикрашання пончиків"
-          />
+          <picture>
+            <source
+              srcset="
+                ./images/images-about/example-1-desktop.png    1x,
+                ./images/images-about/example-1-desktop@2x.png 2x
+              "
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="
+                ./images/images-about/example-1-tablet.png    1x,
+                ./images/images-about/example-1-tablet@2x.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/images-about/example-1-mobile.png    1x,
+                ./images/images-about/example-1-mobile@2x.png 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <img
+              class="program__img"
+              src="./images/images-about/example-1-mobile.png"
+              alt="Процес прикрашання пончиків"
+            />
+          </picture>
           <div class="program__examples-wrapper">
             <h3 class="program__examples-title">Type of the event</h3>
             <p class="program__examples-text">Cooking classes</p>
@@ -63,37 +90,109 @@
       </li>
       <li class="program__examples-bg">
         <div class="program__examples-bg--position">
-          <img
-            class="program__img"
-            src="./images/images-about/example-3-mobile.png"
-            alt="Дівчата готують пончики"
-          />
+          <picture>
+            <source
+              srcset="
+                ./images/images-about/example-2-desktop.png    1x,
+                ./images/images-about/example-2-desktop@2x.png 2x
+              "
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="
+                ./images/images-about/example-2-tablet.png    1x,
+                ./images/images-about/example-2-tablet@2x.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/images-about/example-2-mobile.png    1x,
+                ./images/images-about/example-2-mobile@2x.png 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <img
+              class="program__img"
+              src="./images/images-about/example-2-mobile.png"
+              alt="Дівчата готують пончики"
+            />
+          </picture>
+
           <div class="program__examples-wrapper">
             <h3 class="program__examples-title">Number of guests</h3>
             <p class="program__examples-text">1 to 20</p>
           </div>
         </div>
       </li>
-      <li class="program__examples-bg">
+      <li class="program__examples-bg program__examples-bg--ecllipse">
         <div class="program__examples-bg--position">
-          <img
-            class="program__img"
-            src="./images/images-about/example-2-mobile.png"
-            alt="Пекар с годинником"
-          />
+          <picture>
+            <source
+              srcset="
+                ./images/images-about/example-3-desktop.png    1x,
+                ./images/images-about/example-3-desktop@2x.png 2x
+              "
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="
+                ./images/images-about/example-3-tablet.png    1x,
+                ./images/images-about/example-3-tablet@2x.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/images-about/example-3-mobile.png    1x,
+                ./images/images-about/example-3-mobile@2x.png 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <img
+              class="program__img"
+              src="./images/images-about/example-3-mobile.png"
+              alt="Пекар с годинником"
+            />
+          </picture>
+
           <div class="program__examples-wrapper">
             <h3 class="program__examples-title">Time of the event</h3>
             <p class="program__examples-text">18:30 (2.5 hours)</p>
           </div>
         </div>
       </li>
-      <li class="program__examples-bg">
+      <li class="program__examples-bg program__examples-bg--ecllipse-last">
         <div class="program__examples-bg--position">
-          <img
-            class="program__img"
-            src="./images/images-about/example-4-mobile.png"
-            alt="Дівчина виступає на публіку"
-          />
+          <picture>
+            <source
+              srcset="
+                ./images/images-about/example-4-desktop.png    1x,
+                ./images/images-about/example-4-desktop@2x.png 2x
+              "
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="
+                ./images/images-about/example-4-tablet.png    1x,
+                ./images/images-about/example-4-tablet@2x.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/images-about/example-4-mobile.png    1x,
+                ./images/images-about/example-4-mobile@2x.png 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <img
+              class="program__img"
+              src="./images/images-about/example-4-mobile.png"
+              alt="Дівчина виступає на публіку"
+            />
+          </picture>
+
           <div class="program__examples-wrapper">
             <h3 class="program__examples-title">The host speaks</h3>
             <p class="program__examples-text">English, French</p>

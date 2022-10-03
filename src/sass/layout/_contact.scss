@@ -1,7 +1,7 @@
 .contact {
   position: relative;
   padding-top: 20px;
-  padding-bottom: 28px;
+  padding-bottom: 14px;
 
   @media screen and (min-width: 768px) {
     padding-top: 34px;
@@ -103,7 +103,8 @@
       width: 30px;
       height: 30px;
       top: 0;
-      right: 30px;
+      transform: translateY(35%);
+      right: 25px;
       z-index: -1;
 
       background-image: url('../images/registration-img/Decor3.svg');
@@ -168,6 +169,7 @@
   font-size: 16px;
   line-height: 1.25;
   padding-bottom: 2px;
+  border: none;
   border-bottom: 1px solid #000000;
   color: rgba(0, 0, 0, 0.5);
   background-color: transparent;
