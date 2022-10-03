@@ -8,9 +8,9 @@
 }
 .slick-center img {
   @media screen and (min-width: $breakpoint-tablet) {
-    width: 200px;
-    height: 200px;
-    max-width: inherit;
+    width: 151px;
+    height: 151px;
+    // max-width: inherit;
   }
   @media screen and (min-width: $breakpoint-decktop) {
     width: 394px;
@@ -198,10 +198,8 @@
 .slider__item {
   margin-left: 16px;
   margin-right: 16px;
+  transition: transform 250ms linear;
 }
-// .slider__item img {
-//   max-width: 100%;
-// }
 
 .slider {
   display: flex;
@@ -296,5 +294,11 @@
 
       color: #3c322d;
     }
+  }
+}
+
+@media screen and (min-width: $breakpoint-tablet) and (max-width: 1279px) {
+  .slick-current img {
+    transform: scale(1.8);
   }
 }
