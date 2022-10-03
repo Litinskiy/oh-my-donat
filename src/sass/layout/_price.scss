@@ -3,6 +3,9 @@
   @media screen and (min-width: $breakpoint-tablet) {
     padding-bottom: 40px;
   }
+  @media screen and (min-width: $breakpoint-decktop) {
+    padding-bottom: 50px;
+  }
 }
 
 .section__title--price {
@@ -173,6 +176,11 @@
   box-shadow: 10px 15px 25px rgba(210, 201, 201, 0.45);
   &:not(:last-child) {
     margin-bottom: 24px;
+  }
+  @media screen and (min-width: $breakpoint-tablet) {
+    &:not(:last-child) {
+      margin-bottom: 0px;
+    }
   }
 
   &__meta-wrapper {
