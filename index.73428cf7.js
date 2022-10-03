@@ -1,0 +1,2 @@
+(()=>{const e=document.querySelector("[open-button-about]"),s=document.querySelector("[text-about]"),t=document.querySelector("[close-button-about]");e.addEventListener("click",(()=>{s.classList.toggle("is-hidden"),e.classList.add("is-hidden"),t.classList.remove("is-hidden")})),t.addEventListener("click",(()=>{s.classList.toggle("is-hidden"),e.classList.remove("is-hidden"),t.classList.add("is-hidden")}))})();
+//# sourceMappingURL=index.73428cf7.js.map
