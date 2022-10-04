@@ -22,12 +22,13 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          centerPadding: '-40px',
         },
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
+        // breakpoint: 480,
+        // settings: {
+        //   slidesToShow: 1,
+        //   slidesToScroll: 1,
+        // },
       },
     ],
   });
