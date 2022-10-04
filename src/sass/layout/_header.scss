@@ -52,6 +52,57 @@
   }
 }
 
+@keyframes around {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.logo-around {
+  position: relative;
+
+  cursor: pointer;
+}
+
+.logo-around:hover,
+.logo-around:focus {
+    &::after {
+      display: block;
+      content: '';
+  
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      top: 0px;
+      left: 15px;
+  
+      background-image: url('../images/header/logo-circle-50-50_2.png');
+      background-repeat: no-repeat;
+  
+      animation-name: around;
+      animation-duration: 2000ms;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+
+      @media screen and (min-width: $breakpoint-tablet) {
+        background-image: url('../images/header/fav50_1.png');
+      }
+
+      @media screen and (min-width: $breakpoint-decktop) {
+        width: 70px;
+        height: 70px;
+        top: 0px;
+        left: 24px;
+
+        background-image: url('../images/header/fav70.png');
+      }
+    }  
+  }
+
 .logo-menu-wrapper {
   display: flex;
   justify-content: space-between;
@@ -166,6 +217,7 @@
 }
 
 .header__subtitle {
+  position: relative;
   margin-bottom: 28px;
 
   font-family: 'Montserrat Alternates', sans-serif;
@@ -279,7 +331,7 @@
 
   background-color: $bg-main-color;
 
-  transform: translateY(-150%);
+  transform: translateY(-300%);
   transition: transform $time $timing-function;
 
   padding: 16px 20px;
