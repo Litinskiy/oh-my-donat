@@ -46,8 +46,8 @@
   }
 
   @media screen and (min-width: $breakpoint-tablet) {
-    padding-top: 28px;
-    padding-bottom: 40px;
+    padding-top: 40px;
+    padding-bottom: 22px;
   }
 
   @media screen and (min-width: $breakpoint-decktop) {
@@ -119,12 +119,13 @@
     @media screen and (min-width: $breakpoint-tablet) {
       min-width: 329px;
       margin-right: 39px;
+      padding-top: 12px;
     }
 
     @media screen and (min-width: $breakpoint-decktop) {
       max-width: 417px;
       margin-right: 116px;
-      padding-top: 61px;
+      padding-top: 64px;
     }
   }
 
@@ -353,13 +354,13 @@
     margin: 0 auto;
 
     @media screen and (min-width: $breakpoint-tablet) {
-      margin-top: 19px;
       min-width: 340px;
-      align-content: flex-start;
+      align-content: end;
     }
 
     @media screen and (min-width: $breakpoint-decktop) {
       min-width: 716px;
+      align-content: flex-start;
     }
   }
 
@@ -409,9 +410,9 @@
       }
 
       &:nth-child(2) {
-        margin-top: 36px;
+        margin-top: 60px;
         margin-bottom: 0;
-        margin-left: 128px;
+        margin-left: 136px;
       }
 
       &:nth-child(3) {
