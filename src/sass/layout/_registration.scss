@@ -107,7 +107,7 @@
       linear-gradient(rgba(61, 44, 44, 0.3), rgba(61, 44, 44, 0.3)),
       url('../images/registration-img/webp/topping-on-strawberry-tab1x.webp');
     background-position: left, right, right;
-    background-size: 563px, 453px, 453px;
+    background-size: 563px 100%, 453px, 453px;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -157,7 +157,7 @@
       url('/src/images/registration-img/webp/topping-on-strawberry-desk1x.webp');
     background-position: left, right, right;
     background-repeat: no-repeat;
-    background-size: 937px, 453px, 453px;
+    background-size: 937px 100%, 453px, 453px;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -252,6 +252,7 @@
   @media screen and (min-width: 768px) {
     color: #000000;
     width: 90px;
+        padding-top: 85px;
     text-align: right;
     margin-bottom: 0;
   }
@@ -261,6 +262,7 @@
     font-size: 20px;
     line-height: 1.2;
     text-align: right;
+    padding-top: 0;
     margin-bottom: 0;
   }
 }
@@ -274,12 +276,12 @@
   @media screen and (min-width: 768px) {
     color: #000000;
     text-align: left;
+    max-width: 210px;
     margin-bottom: 16px;
-    max-width: 283px;
   }
   @media screen and (min-width: 1280px) {
     margin-bottom: 24px;
-    width: 252px;
+    max-width: 252px;
     font-size: 20px;
     line-height: 1.2;
   }
@@ -293,8 +295,7 @@
     content: '';
     display: inline-block;
     left: 0px;
-    top: 40px;
-    width: 100%;
+    top: 60px;
     border: 1px solid rgba(255, 255, 255, 1);
   }
 }
@@ -310,7 +311,7 @@
     padding-top: 40px;
    text-align: start;
     position: relative;
-    width: 283px;
+    width: 237px;
     margin-left: 56px;
     margin-right: 74px;
 
