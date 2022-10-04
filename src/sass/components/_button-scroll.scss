@@ -2,17 +2,31 @@
   background-image: url('../images/reviews-img/double-arrow-top-icon.svg');
   background-color: transparent;
   background-repeat: no-repeat;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   position: fixed;
-  bottom: 100px;
-  right: 30px;
+  bottom: 30px;
+  right: 20px;
   opacity: 0;
   transition: opacity 400ms linear;
 
+  @media screen and (min-width: $breakpoint-tablet) {
+    width: 20px;
+    height: 20px;
+    bottom: 40px;
+    right: 30px;
+  }
+
+  @media screen and (min-width: $breakpoint-decktop) {
+    width: 25px;
+    height: 25px;
+    bottom: 50px;
+    right: 40px;
+  }
+
   // animation-name: 'play_down';
   animation-name: 'play_top';
-  animation-duration: 1s;
+  animation-duration: 4000ms;
   animation-iteration-count: infinite;
   box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.5);
   cursor: pointer;
