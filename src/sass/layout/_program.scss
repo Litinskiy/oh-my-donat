@@ -301,6 +301,7 @@
     background-color: inherit;
     border: none;
     padding: 0;
+    animation: pulsing 3s infinite;
 
     @media screen and (max-width: 767px) {
       font-size: $font-sz-16;
@@ -355,12 +356,11 @@
 
     @media screen and (min-width: $breakpoint-tablet) {
       min-width: 340px;
-      align-content: end;
+      align-content: flex-start;
     }
 
     @media screen and (min-width: $breakpoint-decktop) {
       min-width: 716px;
-      align-content: flex-start;
     }
   }
 
