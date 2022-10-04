@@ -4,11 +4,11 @@ $(document).ready(function () {
     infinity: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    // autoplay: true,
+    autoplay: true,
     centerPadding: '10px',
     centerMode: true,
-    speed: 1600,
-    autoplaySpeed: 1400,
+    // speed: 1600,
+    autoplaySpeed: 2500,
     responsive: [
       {
         breakpoint: 1280,
