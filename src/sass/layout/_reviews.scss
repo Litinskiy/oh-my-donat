@@ -1,9 +1,9 @@
 .slick-center {
-  @media screen and (min-width: $breakpoint-tablet) {
-    padding-top: 103px;
-  }
+  // @media screen and (min-width: $breakpoint-tablet) {
+  //   padding-top: 103px;
+  // }
   @media screen and (min-width: $breakpoint-decktop) {
-    padding-top: 170px;
+    padding-top: 145px;
   }
 }
 .slick-center img {
@@ -44,6 +44,14 @@
   padding-top: 20px;
   padding-bottom: 20px;
   max-width: 100%;
+  @media screen and (min-width: $breakpoint-tablet) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  @media screen and (min-width: $breakpoint-decktop) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
   &__container {
     display: flex;
     flex-direction: column;
@@ -159,6 +167,7 @@
 
 .slick-slider {
   min-width: 0;
+  display: inline;
 }
 /* Ограничивающая оболочка */
 .slick-list {
@@ -196,19 +205,18 @@
 }
 
 .slider__item {
-  margin-left: 16px;
-  margin-right: 16px;
+  // margin-left: 16px;
+  // margin-right: 16px;
   transition: transform 250ms linear;
 }
 
 .slider {
-  display: flex;
-
   @media screen and (min-width: $breakpoint-tablet) {
-    height: 475px;
+    height: 630px;
+    display: inline-flex;
   }
   @media screen and (min-width: $breakpoint-decktop) {
-    height: 750px;
+    height: 711px;
   }
   &__img {
     border-radius: 50%;
@@ -246,8 +254,8 @@
       background-repeat: no-repeat;
       width: 136px;
       height: 24px;
-      top: -91%;
-      left: 49%;
+      top: -109%;
+      left: 50%;
       transform: translate(-50%, -50%);
     }
     &--star {
@@ -262,6 +270,9 @@
         top: -91%;
         left: 49%;
         transform: translate(-50%, -50%);
+        @media screen and (min-width: $breakpoint-tablet) and (max-width: 1279px) {
+          top: -100%;
+        }
       }
     }
     @media screen and (min-width: $breakpoint-tablet) {
@@ -299,6 +310,21 @@
 
 @media screen and (min-width: $breakpoint-tablet) and (max-width: 1279px) {
   .slick-current img {
-    transform: scale(1.8);
+    transform: scale(1.8) translateY(71px);
+  }
+  .slider__item {
+    // margin-left: 16px;
+    // margin-right: 16px;
+    transition: transform 250ms linear;
+  }
+}
+
+.slick-current {
+  transition: all 1500ms cubic-bezier(0.57, 0.21, 0.39, 2.25);
+}
+
+@media screen and (min-width: $breakpoint-tablet) and (max-width: 1279px) {
+  .slick-current .slider__name {
+    margin-top: 232px;
   }
 }
