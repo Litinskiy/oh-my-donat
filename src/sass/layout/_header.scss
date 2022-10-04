@@ -279,7 +279,7 @@
 
   background-color: $bg-main-color;
 
-  transform: translate(100%);
+  transform: translateY(-100%);
   transition: transform $time $timing-function;
 
   padding: 16px 20px;
@@ -343,7 +343,7 @@
   }
 
   &.is-open {
-    transform: translate(0);
+    transform: translateY(0);
   }
 }
 
