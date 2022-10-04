@@ -16,11 +16,13 @@
       left: 50%;
       transform: translate(-40%, 130%);
       background-image: url('../images/registration-img/colorful-and-tasty-mob1x.png');
+      background-image: url('../images/registration-img/webp/colorful-and-tasty-mob1x.webp');
 
       @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
         background-image: url('../images/registration-img/colorful-and-tasty-mob@2x.png');
+        background-image: url('../images/registration-img/webp/colorful-and-tasty-mob@2x.webp');
         background-size: cover;
       }
     }
