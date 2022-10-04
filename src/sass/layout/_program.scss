@@ -428,22 +428,22 @@
       }
     }
 
-    &:hover,
-    &:focus {
-      cursor: pointer;
-      // transition-property: box-shadow transform;
-      // transition-duration: 0.3s;
-      // transition-delay: 0s;
-      // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-      transform: scale(1.03);
-      box-shadow: 0 0 5px 3px rgb(243 132 140 / 42%);
-    }
-
     &--position {
       position: relative;
       border: 1px solid $accent-pink-color;
       border-radius: 50%;
+
+      &:hover,
+      &:focus {
+        cursor: pointer;
+        // transition-property: box-shadow transform;
+        // transition-duration: 0.3s;
+        // transition-delay: 0s;
+        // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        transform: scale(1.03);
+        box-shadow: 0 0 5px 3px rgb(243 132 140 / 42%);
+      }
 
       &::after {
         content: '';
@@ -512,35 +512,35 @@
     &--ecllipse-firts {
       position: relative;
 
-      &::after {
-        @media screen and (max-width: 767px) {
-          content: '';
-          width: 20px;
-          height: 20px;
-          background-image: url('../images/images-about/ellipse/ellipse-Eva-mobile-mini.svg');
-          position: absolute;
-          top: -138px;
-          right: -113px;
-        }
+      // &::after {
+      //   @media screen and (max-width: 767px) {
+      //     content: '';
+      //     width: 20px;
+      //     height: 20px;
+      //     background-image: url('../images/images-about/ellipse/ellipse-Eva-mobile-mini.svg');
+      //     position: absolute;
+      //     top: -138px;
+      //     right: -113px;
+      //   }
 
-        @media screen and (min-width: $breakpoint-tablet) {
-          content: '';
-          width: 16px;
-          height: 16px;
-          background-image: url('../images/images-about/ellipse/ellipse-read-more-bottom.svg');
-          position: absolute;
-          top: 447px;
-          right: 449px;
-        }
+      //   @media screen and (min-width: $breakpoint-tablet) {
+      //     content: '';
+      //     width: 16px;
+      //     height: 16px;
+      //     background-image: url('../images/images-about/ellipse/ellipse-read-more-bottom.svg');
+      //     position: absolute;
+      //     top: 447px;
+      //     right: 449px;
+      //   }
 
-        @media screen and (min-width: $breakpoint-decktop) {
-          width: 32px;
-          height: 32px;
-          background-size: contain;
-          top: 640px;
-          right: 747px;
-        }
-      }
+      //   @media screen and (min-width: $breakpoint-decktop) {
+      //     width: 32px;
+      //     height: 32px;
+      //     background-size: contain;
+      //     top: 640px;
+      //     right: 747px;
+      //   }
+      // }
 
       &::before {
         content: '';
@@ -572,22 +572,22 @@
     &--ecllipse-last {
       position: relative;
 
-      &::before {
-        @media screen and (min-width: $breakpoint-tablet) {
-          content: '';
-          width: 32px;
-          height: 32px;
-          background-image: url('../images/images-about/ellipse/ellipse-content-middle-grey.svg');
-          position: absolute;
-          top: 232px;
-          right: 167px;
-        }
+      // &::before {
+      //   @media screen and (min-width: $breakpoint-tablet) {
+      //     content: '';
+      //     width: 32px;
+      //     height: 32px;
+      //     background-image: url('../images/images-about/ellipse/ellipse-content-middle-grey.svg');
+      //     position: absolute;
+      //     top: 232px;
+      //     right: 167px;
+      //   }
 
-        @media screen and (min-width: $breakpoint-decktop) {
-          top: 311px;
-          right: 360px;
-        }
-      }
+      //   @media screen and (min-width: $breakpoint-decktop) {
+      //     top: 311px;
+      //     right: 360px;
+      //   }
+      // }
 
       &::after {
         @media screen and (min-width: $breakpoint-tablet) {
