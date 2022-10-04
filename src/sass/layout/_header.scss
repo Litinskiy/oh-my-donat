@@ -75,30 +75,26 @@
       content: '';
   
       position: absolute;
-      width: 50px;
-      height: 50px;
-      top: 0px;
-      left: 15px;
+      width: 55px;
+      height: 55px;
+      top: -3px;
+      left: 13px;
   
-      background-image: url('../images/header/logo-circle-50-50_2.png');
+      background-image: url('../images/header/donut-55-55.png');
       background-repeat: no-repeat;
   
       animation-name: around;
-      animation-duration: 2000ms;
+      animation-duration: 3000ms;
       animation-timing-function: linear;
       animation-iteration-count: infinite;
 
-      @media screen and (min-width: $breakpoint-tablet) {
-        background-image: url('../images/header/Fav50_1.png');
-      }
-
       @media screen and (min-width: $breakpoint-decktop) {
-        width: 70px;
-        height: 70px;
-        top: 0px;
-        left: 24px;
+        width: 78px;
+        height: 78px;
+        top: -5px;
+        left: 20px;
 
-        background-image: url('../images/header/Fav70.png');
+        background-image: url('../images/header/donut-78-78.png');
       }
     }  
   }
