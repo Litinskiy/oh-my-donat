@@ -107,7 +107,6 @@
       linear-gradient(rgba(61, 44, 44, 0.3), rgba(61, 44, 44, 0.3)),
       url('../images/registration-img/webp/topping-on-strawberry-tab1x.webp');
     background-position: left, right, right;
-    // background-repeat: no-repeat;
     background-size: 563px, 453px, 453px;
 
     @media (min-device-pixel-ratio: 2),
@@ -138,7 +137,7 @@
         background-image: url('../images/registration-img/colorful-and-tasty-tab@2x.png');
         background-image: url('../images/registration-img/webp/colorful-and-tasty-tab@2x.webp');
         background-size: cover;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        
       }
     }
   }
@@ -170,7 +169,7 @@
         linear-gradient(rgba(61, 44, 44, 0.3), rgba(61, 44, 44, 0.3)),
         url('../images/registration-img/webp/topping-on-strawberry-desk2x.webp');
 
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      
     }
 
     &::after {
@@ -257,8 +256,10 @@
     margin-bottom: 0;
   }
   @media screen and (min-width: 1280px) {
-    color: #000000;
+    color: #3C322D;
     min-width: 127px;
+    font-size: 20px;
+    line-height: 1.2;
     text-align: right;
     margin-bottom: 0;
   }
@@ -292,7 +293,7 @@
     content: '';
     display: inline-block;
     left: 0px;
-    top: 60px;
+    top: 40px;
     width: 100%;
     border: 1px solid rgba(255, 255, 255, 1);
   }
@@ -335,7 +336,7 @@
 .registration-form__input {
   width: 100%;
   height: 20px;
-  margin-bottom: 22px;
+  // margin-bottom: 22px;
   padding-bottom: 2px;
   font-size: 16px;
   line-height: 1.25;
@@ -347,19 +348,33 @@
 
   @media screen and (min-width: 768px) {
     width: 237px;
-    margin-bottom: 16px;
+    // margin-bottom: 16px;
     line-height: 1.25;
     color: $title-color;
     border-bottom: 1px solid $title-color;
   }
   @media screen and (min-width: 1280px) {
     width: 212px;
-    margin-bottom: 14px;
+    // margin-bottom: 14px;
     border-bottom: 1px solid $title-color;
   }
 }
 
-.registration-form__input:last-child {
+.registration-form__lable{
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+      margin-bottom: 16px;
+    }
+  
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 14px;
+    }
+
+}
+
+
+.registration-form__lable:last-child {
   margin-bottom: 32px;
 
   @media screen and (min-width: 768px) {
