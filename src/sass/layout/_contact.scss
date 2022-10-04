@@ -2,6 +2,7 @@
   position: relative;
   padding-top: 20px;
   padding-bottom: 14px;
+  overflow: hidden;
 
   @media screen and (min-width: 768px) {
     padding-top: 34px;
@@ -47,7 +48,7 @@
       width: 100px;
       height: 100px;
       top: 0;
-      right: -20px;
+      right: -16px;
       z-index: -1;
 
       background-image: url('../images/registration-img/decor-tab-100-smoke.svg');
