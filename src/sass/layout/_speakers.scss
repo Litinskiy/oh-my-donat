@@ -43,16 +43,6 @@
   }
 }
 
-.speakers-list__item {
-  &:hover,
-  &:focus {
-    transition-property: box-shadow transform;
-    transition-duration: 0.3s;
-    transition-delay: 0s;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transform: scale(1.03);
-  }
-}
 //   @media (max-width: 768px) {
 //     width: calc((100% - 40px) / 2);
 //     margin: 10px;
@@ -433,5 +423,16 @@
 
       background-image: url('../images/speakers-images/svg/dt_left-top.svg');
     }
+  }
+}
+
+.speakers__picture {
+  &:hover,
+  &:focus {
+    transition-property: box-shadow transform;
+    transition-duration: 0.3s;
+    transition-delay: 0s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transform: scale(1.03);
   }
 }
