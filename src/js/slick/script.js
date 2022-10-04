@@ -7,7 +7,7 @@ $(document).ready(function () {
     // autoplay: true,
     centerPadding: '10px',
     centerMode: true,
-    speed: 1600,
+    // speed: 1600,
     autoplaySpeed: 1400,
     responsive: [
       {
