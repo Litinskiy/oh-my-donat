@@ -24,11 +24,6 @@ $(document).ready(function () {
           slidesToScroll: 1,
           centerPadding: '-40px',
         },
-        // breakpoint: 480,
-        // settings: {
-        //   slidesToShow: 1,
-        //   slidesToScroll: 1,
-        // },
       },
     ],
   });
