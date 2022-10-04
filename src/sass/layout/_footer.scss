@@ -136,4 +136,12 @@
 .footer__contact-link {
   line-height: 1.25;
   color: $title-color;
+  transition: color $time $timing-function;
+}
+
+@media screen and (min-width: 768px) {
+.footer__contact-link:hover,
+.footer__contact-link:focus{
+  color: $accent-pink-color;
+}
 }

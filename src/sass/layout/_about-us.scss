@@ -170,6 +170,18 @@
     }
   }
 
+  @keyframes pulsing {
+    0% {
+      transform: scale(0.8, 1);
+    }
+    50% {
+      transform: scale(1, 1.7);
+    }
+    100% {
+      transform: scale(0.8, 1);
+    }
+  }
+
   &__button {
     font-family: 'Montserrat';
     color: $main-color;
@@ -177,6 +189,12 @@
     background-color: inherit;
     border: none;
     padding: 0;
+    animation: pulsing 3s infinite;
+
+    &:hover,
+    &:focus {
+      color: #f3848c;
+    }
 
     @media screen and (max-width: 767px) {
       font-size: $font-sz-16;
