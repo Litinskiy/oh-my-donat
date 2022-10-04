@@ -80,7 +80,7 @@
 
   font-weight: 500;
   font-size: 12px;
-  line-height: 15px;
+  line-height: 1.25;
 
   text-align: center;
 
@@ -91,11 +91,13 @@
   @media screen and (min-width: $breakpoint-tablet) {
     width: 152px;
     font-size: 14px;
+    line-height: 1.2;
   }
 
   @media screen and (min-width: $breakpoint-decktop) {
     width: 181px;
     font-size: 16px;
+    line-height: 1.25;
   }
 }
 
@@ -241,12 +243,12 @@
   position: relative;
 
   @media screen and (min-width: $breakpoint-tablet) {
-    padding-top: 12px;
+    padding-top: 22px;
     padding-bottom: 38px;
   }
   @media screen and (min-width: $breakpoint-decktop) {
-    padding-top: 59px;
-    padding-bottom: 43px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 

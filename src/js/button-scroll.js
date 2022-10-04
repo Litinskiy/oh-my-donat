@@ -3,7 +3,10 @@ window.onscroll = function () {
 };
 
 function scrollFunction() {
-  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+  if (
+    document.body.scrollTop > 450 ||
+    document.documentElement.scrollTop > 450
+  ) {
     document.getElementById('up').classList.add('btn-style');
   } else {
     document.getElementById('up').classList.remove('btn-style');

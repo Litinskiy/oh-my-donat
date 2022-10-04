@@ -30,7 +30,7 @@
   @media screen and (min-width: $breakpoint-tablet) {
     display: flex;
     justify-content: center;
-    width: 668px;
+    width: 704px;
     right: 240px;
   }
   @media screen and (min-width: $breakpoint-decktop) {
@@ -212,7 +212,7 @@
 
 .slider {
   @media screen and (min-width: $breakpoint-tablet) {
-    height: 630px;
+    height: 612px;
     display: inline-flex;
   }
   @media screen and (min-width: $breakpoint-decktop) {
@@ -310,7 +310,7 @@
 
 @media screen and (min-width: $breakpoint-tablet) and (max-width: 1279px) {
   .slick-current img {
-    transform: scale(1.8) translateY(71px);
+    transform: scale(2.2) translateY(75px);
   }
   .slider__item {
     // margin-left: 16px;
@@ -320,11 +320,11 @@
 }
 
 .slick-current {
-  transition: all 1500ms cubic-bezier(0.57, 0.21, 0.39, 2.25);
+  transition: all 1500ms cubic-bezier(0.57, 0.21, 0.39, 1.25);
 }
 
 @media screen and (min-width: $breakpoint-tablet) and (max-width: 1279px) {
   .slick-current .slider__name {
-    margin-top: 232px;
+    margin-top: 298px;
   }
 }
