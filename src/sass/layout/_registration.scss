@@ -65,7 +65,7 @@
       rgba(61, 44, 44, 0.6)
     ),
     url('../images/registration-img/topping-on-strawberry-mob1x.png');
-    background-image: linear-gradient(
+  background-image: linear-gradient(
       to right,
       rgba(61, 44, 44, 0.6),
       rgba(61, 44, 44, 0.6)
@@ -84,7 +84,7 @@
         rgba(61, 44, 44, 0.6)
       ),
       url('../images/registration-img/topping-on-strawberry-mob@2x.png');
-      background-image: linear-gradient(
+    background-image: linear-gradient(
         to right,
         rgba(61, 44, 44, 0.6),
         rgba(61, 44, 44, 0.6)
@@ -137,7 +137,6 @@
         background-image: url('../images/registration-img/colorful-and-tasty-tab@2x.png');
         background-image: url('../images/registration-img/webp/colorful-and-tasty-tab@2x.webp');
         background-size: cover;
-        
       }
     }
   }
@@ -168,8 +167,6 @@
       background-image: url('../images/registration-img/webp/Rectangle-desk@2x.webp'),
         linear-gradient(rgba(61, 44, 44, 0.3), rgba(61, 44, 44, 0.3)),
         url('../images/registration-img/webp/topping-on-strawberry-desk2x.webp');
-
-      
     }
 
     &::after {
@@ -218,11 +215,16 @@
   line-height: 1.21;
   text-align: center;
   color: #2e2520;
-  @media screen and (min-width: 1280px) {
-    margin-bottom: 28px;
+
+  @media screen and (min-width: 768px) {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.22;
   }
 
   @media screen and (min-width: 1280px) {
+    margin-bottom: 28px;
+
     &::before {
       display: block;
       content: '';
@@ -251,13 +253,13 @@
 
   @media screen and (min-width: 768px) {
     color: #000000;
-    width: 90px;
-        padding-top: 85px;
+    min-width: 90px;
+    padding-top: 85px;
     text-align: right;
     margin-bottom: 0;
   }
   @media screen and (min-width: 1280px) {
-    color: #3C322D;
+    color: #3c322d;
     min-width: 127px;
     font-size: 20px;
     line-height: 1.2;
@@ -309,7 +311,7 @@
 
   @media screen and (min-width: 768px) {
     padding-top: 40px;
-   text-align: start;
+    text-align: start;
     position: relative;
     width: 237px;
     margin-left: 56px;
@@ -334,11 +336,11 @@
   }
 }
 
-.registration-wrapper{
-@media screen and (min-width: 768px) {
-  display: block;
-  margin-right: 12px;
-}
+.registration-wrapper {
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-right: 12px;
+  }
 }
 
 .registration-form__input {
@@ -368,19 +370,17 @@
   }
 }
 
-.registration-form__lable{
+.registration-form__lable {
   margin-bottom: 20px;
 
   @media screen and (min-width: 768px) {
-      margin-bottom: 16px;
-    }
-  
-    @media screen and (min-width: 1280px) {
-      margin-bottom: 14px;
-    }
+    margin-bottom: 16px;
+  }
 
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 14px;
+  }
 }
-
 
 .registration-form__lable:last-child {
   margin-bottom: 32px;
@@ -401,14 +401,8 @@
   @media screen and (min-width: 768px) {
     margin-top: auto;
     margin-bottom: auto;
-    }
-  
-    @media screen and (min-width: 1280px) {
-      ;
-    }
+  }
 }
-
-
 
 .registration-form__input:invalid {
   border-bottom: 2px solid red;

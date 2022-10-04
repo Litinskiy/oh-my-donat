@@ -69,6 +69,13 @@
   text-align: center;
   color: #2e2520;
 
+    @media screen and (min-width: 768px) {
+      font-weight: 500;
+        font-size: 32px;
+        line-height: 1.22;
+      }
+    
+
   @media screen and (min-width: 1280px) {
     &::after {
       display: block;
@@ -114,6 +121,8 @@
     margin-bottom: 27px;
   }
   @media screen and (min-width: 1280px) {
+    font-size: 18px;
+    line-height: 1.22;
     margin-bottom: 16px;
   }
 }
